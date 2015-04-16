@@ -1,0 +1,295 @@
+$celeste: #58C6E7;
+$gris: #9E9D9D;
+$gris-claro: #eeeeee;
+$naranja: #ff4016;
+$verde-limon: #77d248;
+$amarillo:#fcf07e;
+$mostaza: #ffd13f;
+
+h1, h2, h3, h4, h5, h6, p, a, strong {
+	font-family: 'Lato', sans-serif;
+}
+h1 {
+	margin-top: 35px;
+}
+
+.container.text-center, .container {
+  padding: 56px 84px 42px;
+}
+
+
+
+nav.navbar.navbar-default.navbar-fixed-top {
+	background-color: transparent;
+	border-color: transparent;
+	.btn-default {
+		background-color: gray;
+		color: white;
+		border-radius: 25px;
+	}
+	.navbar-toggle {
+		float: left;
+	}
+	.btn.btn-default.crear-perfil {
+		float: right;
+		background-color: $naranja;
+		border-color: $naranja;
+		margin: 7px;
+	}
+	li {
+	  font-size: 18px;
+	  padding: 0px 14px;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.crear-perfil {
+		visibility: hidden;
+	}
+}
+
+#portada {
+	background-image: url(../assets/img/img-home.png);
+	background-size: cover;
+	height: 100%;
+	display: table;
+  	width: 100%;
+  	.row {
+	  text-align: right;
+	  vertical-align: middle;
+	  display: table-cell;
+	}
+	h3 {
+		color: $celeste;
+		padding: 4% 0px;
+	}
+	h4 {
+		color: $gris;
+		line-height: 1.4;
+		font-weight: 300;
+	}
+	.btn.btn-default {
+	  background-color: $naranja;
+	  border-color: $naranja;
+	  color: white;
+	  padding: 12px 14px;
+	  width: 42%;
+	  border-radius: 14px;
+	  margin: 21px;
+	}
+	img.hidden-lg.hidden-md {
+	  width: 100%;
+	}
+}
+
+/*----------CLASES GENERALES-------------*/
+.centrar {
+	padding: 0px 114px;
+}
+.flecha.text-center {
+  bottom: -145px;
+  position: relative;
+  img {
+  	border-radius: 50%;
+  }
+}
+.pt {
+	padding-top: 42px;
+}
+
+.mt {
+	margin-top: 35px;
+}
+
+/*----------FIN DE CLASES GENERALES------------*/
+
+@media screen and (max-width: 480px) {
+	#portada {
+		background-image: none;
+	}
+	.centrar { 
+		padding:  0px;
+	}
+	img.logo {
+  		padding-top: 81px;
+	}
+}
+
+#empresa {
+	h1 {
+		color: $naranja;
+	}
+	h3.border {
+		color: $gris;
+		border-bottom: 2px dashed $naranja;
+		padding-bottom: 21px;
+		margin-top: 28px;
+	}
+	h4,h3,p {
+		color: $gris;
+	}
+	strong {
+		color: $celeste;
+	}
+	.btn-contactos {
+		padding: 14px 49px;
+  		font-size: 21px;
+  		background-color:$naranja;
+  		border-color: $naranja;
+  		border-radius: 30px;
+	}
+	.flecha.text-center {
+		bottom: -77px;
+	}
+}
+
+#centros-educativos {
+	background-color: $verde-limon;
+	h1 {
+		color: white;
+	}
+	h3.border {
+		color: $amarillo;
+		border-bottom: 2px dashed white;
+		padding-bottom: 21px;
+		margin-top: 28px;
+	}
+	h4,h3,p {
+		color: white;
+	}
+	strong {
+		color: $celeste;
+	}
+	.btn-contactos {
+		padding: 14px 49px;
+  		font-size: 21px;
+  		background-color:transparent;
+  		border-color: white;
+  		border-radius: 30px;
+	}
+	.img-circular {
+		border-radius: 50px;
+	}
+	.flecha.text-center {
+		bottom: -77px;
+	}
+}
+
+#oportunidades {
+	background-image: url(../assets/img/img-oportunidades-24.png);
+	background-size: cover;
+	.container {
+		padding: 42px 145px 35px;
+	}
+	.cuadro {
+		background-color: white;
+		padding: 35px 91px;
+		h1.text-center {
+		  color: $gris;
+		}
+	}
+	.servicio {
+	  	border-bottom: 1px dashed $gris;
+	  	margin: 35px 0px;
+	  	h4 {
+			color: $celeste;
+		}
+		ul {
+			list-style: none;
+			padding: 0px;
+			color: $gris;
+			line-height: 1.8;
+			margin-bottom: 35px;
+		}
+		.btn-vermas {
+		  background-color: white;
+		  color: $naranja;
+		  border-color: $naranja;
+		  border-radius: 30px;
+		  float: right;
+		  position: relative;
+	  	  bottom: 56px;
+		}
+	}
+	.btn-vertodos {
+	  position: relative;
+	  background: gray;
+	  border-color: gray;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.container.text-center {
+	  padding: 0px;
+	}
+}
+
+#blog {
+	.container {
+		padding: 56px 145px 42px;
+	}
+	h1 {
+		color: $gris;
+	}
+	.grid-blog {
+		padding-top: 70px;
+		.background {
+			img {
+				border-radius: 50px;
+				position: relative;
+				bottom: 42px;
+			}
+			.comentario {
+			  	text-align: left;
+			  	padding: 20px;
+			  	position: relative;
+			  	bottom: 24px;
+			  	line-height: 1.6;
+			}
+		}
+	}	
+	@media screen and (max-width: 480px) {
+		.container {
+		  padding: 0px;
+		  .background {
+		  	background-color: white;
+		  	.comentario {
+		  		text-align: center;
+		  	}
+		  }
+		  .background:hover {
+		  	background-color: $mostaza;
+		  }
+		}
+	}
+	.btn-vtodos {
+		padding: 14px 49px;
+  		font-size: 21px;
+  		background-color:$celeste;
+  		border-color: white;
+  		border-radius: 30px;
+	}
+}
+
+.background {
+	background-color: $gris-claro;
+}
+.background:hover {
+  background-color: $mostaza;
+  .comentario {
+  	color: white;
+  }
+}
+
+#contactos {
+	background-color: $gris-claro;
+	h1 {
+		color: $gris;
+	}
+	.formulario {
+		padding-top: 35px;
+		input, textarea {
+			margin-bottom: 21px;
+		}
+	}
+}
