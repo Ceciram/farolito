@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*========================================
 =            Bootstrap                   =
 ========================================*/
@@ -5967,6 +5968,9 @@ button.close {
 .pull-right {
   float: right; }
 
+.mb {
+  margin-bottom: 49px; }
+
 @media (min-width: 768px) {
   .container-mediano {
     width: 970px; } }
@@ -6045,15 +6049,101 @@ nav.navbar.navbar-default.navbar-fixed-top {
   margin-top: 35px; }
 
 /*----------FIN DE CLASES GENERALES------------*/
-@media screen and (max-width: 480px) {
-  #portada {
-    background-image: none; }
+/*--------SECCIONES-------*/
+/*--SECCIONES METODOLOG├ìA--*/
+#metodologia h1 {
+  color: #58C6E7; }
+#metodologia h3 {
+  color: #9E9D9D;
+  font-size: 27px; }
+  #metodologia h3 span {
+    color: #ff4016; }
+  #metodologia h3 img.comilla1, #metodologia h3 img.comilla2 {
+    position: relative;
+    bottom: 14px; }
+  #metodologia h3 img.comilla2 {
+    top: 14px; }
+#metodologia .analisis {
+  padding: 42px 65px; }
+#metodologia .circulo-grande {
+  background-color: #ff4016;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 4px; }
+  #metodologia .circulo-grande .circulo {
+    border-radius: 50%;
+    border: 2px dashed white;
+    width: 390px;
+    height: 390px;
+    padding: 81px; }
+    #metodologia .circulo-grande .circulo h4 {
+      color: white;
+      line-height: 1.2; }
+#metodologia .pilares h3, #metodologia .analisis h3 {
+  color: #ff4016; }
+#metodologia .pilares h4, #metodologia .analisis h4 {
+  color: #9E9D9D;
+  padding: 11px; }
+#metodologia .pilares {
+  padding-top: 210px; }
 
-  .centrar {
-    padding: 0px; }
+.izquierda,
+.centro,
+.derecha {
+  border: 2px dashed #ff4016;
+  position: relative; }
 
-  img.logo {
-    padding-top: 81px; } }
+.izquierda {
+  transform: rotate(-111deg);
+  float: right;
+  height: 200px;
+  top: 56px; }
+
+.derecha {
+  transform: rotate(111deg);
+  float: left;
+  height: 200px;
+  top: 56px; }
+
+.centro {
+  transform: rotate(90deg);
+  width: 153px; }
+
+/*--SECCIONES POSTULANTES--*/
+#postulante {
+  background-image: url(../assets/img/img-02.png); }
+  #postulante h1, #postulante h3, #postulante h2, #postulante h4 {
+    color: white; }
+  #postulante .col-md-4 .potencial {
+    position: relative; }
+  #postulante .col-md-4 .circle {
+    float: right;
+    left: 111px;
+    position: relative;
+    bottom: 20px;
+    z-index: 1; }
+    #postulante .col-md-4 .circle img {
+      border-radius: 50%;
+      width: 80%; }
+  #postulante .col-md-4 .subtitulo {
+    padding-bottom: 1px;
+    border-bottom: 2px dashed white; }
+  #postulante .col-md-4.li {
+    border-left: 2px dashed white; }
+    #postulante .col-md-4.li .informacion {
+      padding: 28px 0px 90px 70px; }
+  #postulante .btn-contactos-celeste {
+    padding: 14px 49px;
+    font-size: 21px;
+    background-color: #58C6E7;
+    border-color: white;
+    border-radius: 30px; }
+  #postulante .flecha.text-center {
+    bottom: -84px; }
+
+/*--SECCIONES FAROLITO EMPRESA--*/
 #empresa h1 {
   color: #ff4016; }
 #empresa h3.border {
@@ -6074,6 +6164,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 #empresa .flecha.text-center {
   bottom: -77px; }
 
+/*--SECCIONES FAROLITO CENTROS EDUCATIVOS--*/
 #centros-educativos {
   background-color: #77d248; }
   #centros-educativos h1 {
@@ -6098,11 +6189,12 @@ nav.navbar.navbar-default.navbar-fixed-top {
   #centros-educativos .flecha.text-center {
     bottom: -77px; }
 
+/*--SECCIONES OPORTUNIDADES--*/
 #oportunidades {
   background-image: url(../assets/img/img-oportunidades-24.png);
   background-size: cover; }
   #oportunidades .container {
-    padding: 42px 145px 35px; }
+    padding: 42px 145px 63px; }
   #oportunidades .cuadro {
     background-color: white;
     padding: 35px 91px; }
@@ -6131,10 +6223,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
     position: relative;
     background: gray;
     border-color: gray; }
+  #oportunidades .flecha.text-center {
+    bottom: -133px; }
 
-@media screen and (max-width: 480px) {
-  .container.text-center {
-    padding: 0px; } }
+/*--SECCIONES BLOG--*/
 #blog .container {
   padding: 56px 145px 42px; }
 #blog h1 {
@@ -6160,12 +6252,14 @@ nav.navbar.navbar-default.navbar-fixed-top {
         text-align: center; }
     #blog .container .background:hover {
       background-color: #ffd13f; } }
-#blog .btn-vtodos {
+#blog .btn-contactos-celeste {
   padding: 14px 49px;
   font-size: 21px;
   background-color: #58C6E7;
   border-color: white;
   border-radius: 30px; }
+#blog .flecha.text-center {
+  bottom: -77px; }
 
 .background {
   background-color: #eeeeee; }
@@ -6175,6 +6269,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
   .background:hover .comentario {
     color: white; }
 
+/*--SECCIONES CONTACTOS--*/
 #contactos {
   background-color: #eeeeee; }
   #contactos h1 {
@@ -6183,5 +6278,339 @@ nav.navbar.navbar-default.navbar-fixed-top {
     padding-top: 35px; }
     #contactos .formulario input, #contactos .formulario textarea {
       margin-bottom: 21px; }
+    #contactos .formulario .btn-vertodos {
+      position: relative;
+      background: gray;
+      border-color: gray; }
+    #contactos .formulario .llamanos {
+      color: #9E9D9D;
+      padding: 21px 0px; }
+
+/*--SECCIONES FOOTER--*/
+footer {
+  background-color: #9E9D9D; }
+  footer ul {
+    list-style: none;
+    bottom: 14px;
+    position: relative;
+    display: inline-block; }
+    footer ul li {
+      float: left; }
+      footer ul li img {
+        border-radius: 50px;
+        margin: 0px 7px; }
+  footer .derechos-reservados {
+    position: relative;
+    float: right;
+    color: white;
+    padding: 14px; }
+
+/*MEDIA*/
+@media screen and (max-width: 480px) {
+  #portada {
+    background-image: none; }
+
+  .centrar {
+    padding: 0px; }
+
+  img.logo {
+    padding-top: 81px; }
+
+  .btn-contactos, .btn-contactos-celeste {
+    margin-bottom: 56px; }
+
+  .container.text-center, .container {
+    padding: 0px; }
+
+  .izquierda,
+  .centro,
+  .derecha {
+    border: 1px dashed #ff4016;
+    position: relative;
+    width: 80%; }
+
+  .izquierda {
+    transform: rotate(0deg);
+    float: none;
+    height: 0px;
+    top: 0px; }
+
+  .derecha {
+    transform: rotate(0deg);
+    float: none;
+    height: 0px;
+    top: 0px; }
+
+  .centro {
+    transform: rotate(0deg);
+    width: 80%; }
+
+  #metodologia .pilares {
+    padding-top: 0px; }
+  #metodologia .analisis {
+    padding: 0px; }
+
+  #postulante {
+    background-image: url(../assets/img/img-02.png); }
+    #postulante h1, #postulante h3, #postulante h2, #postulante h4 {
+      color: white; }
+    #postulante .numero {
+      padding-bottom: 21px; }
+      #postulante .numero img {
+        width: 14%;
+        position: relative; }
+    #postulante .col-md-4 .potencial {
+      position: initial; }
+    #postulante .col-md-4 .circle {
+      float: none;
+      left: 0px;
+      position: initial;
+      bottom: 0px;
+      z-index: 1;
+      text-align: center; }
+      #postulante .col-md-4 .circle img {
+        border-radius: 50%;
+        width: 25%; }
+    #postulante .col-md-4 .subtitulo {
+      padding-bottom: 1px;
+      border-bottom: 2px dashed white;
+      text-align: center; }
+    #postulante .col-md-4.li {
+      border-left: none;
+      margin-bottom: 49px; }
+      #postulante .col-md-4.li .informacion {
+        padding: 0px;
+        text-align: center; }
+    #postulante .btn-contactos-celeste {
+      padding: 14px 49px;
+      font-size: 21px;
+      background-color: #58C6E7;
+      border-color: white;
+      border-radius: 30px; }
+    #postulante .col-md-2.text-right {
+      text-align: center; } }
+nav button.btn.btn-default {
+  padding: 3px 28px; }
+
+#sobre-nosotros {
+  background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
+  background-repeat: no-repeat;
+  height: 500px; }
+  #sobre-nosotros h1, #sobre-nosotros h4 {
+    color: white; }
+  #sobre-nosotros .flecha.text-center {
+    bottom: -261px; }
+
+#fundadores .container.text-center, #fundadores .container, #asesores .container.text-center, #asesores .container, #committe .container.text-center, #committe .container {
+  padding: 0px 84px 0px; }
+#fundadores h1, #fundadores h4, #asesores h1, #asesores h4, #committe h1, #committe h4 {
+  color: #9E9D9D; }
+#fundadores .foto, #asesores .foto, #committe .foto {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 4px;
+  display: inline-block; }
+  #fundadores .foto img, #asesores .foto img, #committe .foto img {
+    border-radius: 50%; }
+#fundadores .nombre-cargo, #asesores .nombre-cargo, #committe .nombre-cargo {
+  padding-bottom: 7px; }
+  #fundadores .nombre-cargo h3, #asesores .nombre-cargo h3, #committe .nombre-cargo h3 {
+    color: #58C6E7; }
+  #fundadores .nombre-cargo h4, #asesores .nombre-cargo h4, #committe .nombre-cargo h4 {
+    color: #9E9D9D; }
+#fundadores .parrafo, #asesores .parrafo, #committe .parrafo {
+  padding: 0px 14px; }
+  #fundadores .parrafo h4, #asesores .parrafo h4, #committe .parrafo h4 {
+    line-height: 1.3; }
+
+.linea-separacion {
+  padding: 0px 156px; }
+  .linea-separacion hr {
+    border: 2px dashed #9E9D9D; }
+
+.linea-estilo {
+  padding: 0px 300px; }
+  .linea-estilo hr {
+    border: 2px dashed white; }
+
+#motivacion {
+  background-color: tomato; }
+  #motivacion h3, #motivacion h4 {
+    color: white; }
+  #motivacion h4 {
+    padding: 14px 0px; }
+
+@media screen and (max-width: 480px) {
+  #fundadores .container.text-center, #fundadores .container, #asesores .container.text-center, #asesores .container, #committe .container.text-center, #committe .container, #motivacion .container.text-center, #motivacion .container {
+    padding: 0px; }
+
+  .linea-estilo, .linea-separacion {
+    padding: 0px; } }
+#blog .container.text-center, #blog .container-fluid {
+  padding: 56px 0px 42px; }
+#blog h5, #blog h4 {
+  color: #9E9D9D; }
+#blog h2, #blog h3 {
+  color: #58C6E7; }
+#blog img.foto {
+  float: left; }
+#blog .foto-nombre {
+  position: relative;
+  padding: 7px 0px; }
+  #blog .foto-nombre .nombre {
+    float: left;
+    padding-left: 7px; }
+#blog .contexto h4 {
+  line-height: 1.5; }
+#blog .contexto img {
+  width: 100%; }
+#blog .blog-lista {
+  padding: 0px 50px; }
+  #blog .blog-lista h4 {
+    color: #ffd13f; }
+  #blog .blog-lista .background img {
+    border-radius: 50px;
+    position: relative;
+    bottom: 42px;
+    width: 30%; }
+  #blog .blog-lista .background .comentario {
+    text-align: initial;
+    padding: 0px 18px;
+    position: relative;
+    bottom: 24px;
+    line-height: 1.6;
+    font-size: 16px; }
+  #blog .blog-lista .lista {
+    padding: 14px;
+    padding-bottom: 28px; }
+    #blog .blog-lista .lista h5 {
+      text-align: left; }
+    #blog .blog-lista .lista hr {
+      border: 1px solid #9E9D9D;
+      margin: 0px; }
+
+#blog .container {
+  padding: 56px 145px 42px; }
+#blog h1 {
+  color: #9E9D9D; }
+#blog .grid-blog {
+  padding-top: 70px; }
+  #blog .grid-blog .background img {
+    border-radius: 50px;
+    position: relative;
+    bottom: 42px; }
+  #blog .grid-blog .background .comentario {
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    bottom: 24px;
+    line-height: 1.6; }
+@media screen and (max-width: 480px) {
+  #blog .container {
+    padding: 0px; }
+    #blog .container .background {
+      background-color: white; }
+      #blog .container .background .comentario {
+        text-align: center; }
+    #blog .container .background:hover {
+      background-color: #ffd13f; } }
+#blog .btn-contactos-celeste {
+  padding: 14px 49px;
+  font-size: 21px;
+  background-color: #58C6E7;
+  border-color: white;
+  border-radius: 30px; }
+#blog .flecha.text-center {
+  bottom: -77px; }
+
+.background {
+  background-color: #eeeeee; }
+
+.background:hover {
+  background-color: #ffd13f; }
+  .background:hover .comentario {
+    color: white; }
+
+#blog2 .container {
+  padding: 56px 145px 42px; }
+#blog2 h1 {
+  color: #9E9D9D; }
+#blog2 .grid-blog {
+  padding-top: 70px; }
+  #blog2 .grid-blog .background img {
+    border-radius: 50px;
+    position: relative;
+    bottom: 42px; }
+  #blog2 .grid-blog .background .comentario {
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    bottom: 24px;
+    line-height: 1.6; }
+@media screen and (max-width: 480px) {
+  #blog2 .container {
+    padding: 0px; }
+    #blog2 .container .background {
+      background-color: white; }
+      #blog2 .container .background .comentario {
+        text-align: center; }
+    #blog2 .container .background:hover {
+      background-color: #ffd13f; } }
+#blog2 .btn-contactos-celeste {
+  padding: 14px 49px;
+  font-size: 21px;
+  background-color: #58C6E7;
+  border-color: white;
+  border-radius: 30px; }
+#blog2 .flecha.text-center {
+  bottom: -77px; }
+
+.background {
+  background-color: #eeeeee; }
+  .background p.celeste {
+    color: #58C6E7; }
+
+.background:hover {
+  background-color: #ffd13f; }
+  .background:hover .comentario {
+    color: white; }
+    .background:hover .comentario p.celeste {
+      color: #ff4016; }
+
+nav.navbar.navbar-default.navbar-fixed-top {
+  background-color: transparent;
+  border-color: transparent; }
+  nav.navbar.navbar-default.navbar-fixed-top .btn-default {
+    background-color: gray;
+    color: white;
+    border-radius: 25px; }
+  nav.navbar.navbar-default.navbar-fixed-top .navbar-toggle {
+    float: left; }
+  nav.navbar.navbar-default.navbar-fixed-top .btn.btn-default.crear-perfil {
+    float: right;
+    background-color: #ff4016;
+    border-color: #ff4016;
+    margin: 7px; }
+  nav.navbar.navbar-default.navbar-fixed-top li {
+    font-size: 18px;
+    padding: 0px 14px; }
+
+footer {
+  background-color: #9E9D9D; }
+  footer ul {
+    list-style: none;
+    bottom: 14px;
+    position: relative;
+    display: inline-block; }
+    footer ul li {
+      float: left; }
+      footer ul li img {
+        border-radius: 50px;
+        margin: 0px 7px; }
+  footer .derechos-reservados {
+    position: relative;
+    float: right;
+    color: white;
+    padding: 14px; }
 
 /*# sourceMappingURL=main.css.map */

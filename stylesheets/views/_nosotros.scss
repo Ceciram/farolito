@@ -1,0 +1,84 @@
+nav{
+	button.btn.btn-default {
+  	padding: 3px 28px;
+  }
+}
+
+#sobre-nosotros{
+	background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
+	background-repeat: no-repeat;
+	height: 500px;
+	h1,h4 {
+		color: white;
+	}
+	.flecha.text-center {
+	  bottom: -261px;
+	}
+}
+#fundadores, #asesores, #committe {
+	.container.text-center, .container {
+	  padding: 0px 84px 0px;
+	}
+	h1,h4 {
+		color: $gris;
+	}
+	.foto {
+	  border-radius: 50%;
+	  border: 1px solid gray;
+	  padding: 4px;
+	  display: inline-block;
+	  img {
+	  	border-radius: 50%;
+	  }
+	}
+	.nombre-cargo {
+	  padding-bottom: 7px;
+	  h3 {
+	  	color: $celeste;
+	  }
+	  h4 {
+	  	color: $gris;
+	  }
+	}
+	.parrafo {
+		padding: 0px 14px;
+		h4 {
+			line-height: 1.3;
+		}
+	}
+}
+
+.linea-separacion {
+	hr {
+	border: 2px dashed $gris;
+	}
+  	padding: 0px 156px;
+ }
+
+.linea-estilo {
+	hr {
+	border: 2px dashed white;
+	}
+	padding: 0px 300px;
+}
+
+#motivacion {
+	background-color: $tomate;
+	h3, h4 {
+		color: white;
+	}
+	h4 {
+		padding: 14px 0px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#fundadores, #asesores, #committe, #motivacion {
+		.container.text-center, .container {
+		  padding: 0px;
+		}
+	}
+	.linea-estilo, .linea-separacion {
+		padding: 0px;
+	}
+}

@@ -1,0 +1,22 @@
+nav.navbar.navbar-default.navbar-fixed-top {
+	background-color: transparent;
+	border-color: transparent;
+	.btn-default {
+		background-color: gray;
+		color: white;
+		border-radius: 25px;
+	}
+	.navbar-toggle {
+		float: left;
+	}
+	.btn.btn-default.crear-perfil {
+		float: right;
+		background-color: $naranja;
+		border-color: $naranja;
+		margin: 7px;
+	}
+	li {
+	  font-size: 18px;
+	  padding: 0px 14px;
+	}
+}

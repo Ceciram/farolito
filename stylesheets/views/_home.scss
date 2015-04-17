@@ -5,6 +5,7 @@ $naranja: #ff4016;
 $verde-limon: #77d248;
 $amarillo:#fcf07e;
 $mostaza: #ffd13f;
+$tomate:tomato;
 
 h1, h2, h3, h4, h5, h6, p, a, strong {
 	font-family: 'Lato', sans-serif;
@@ -101,20 +102,139 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	margin-top: 35px;
 }
 
+
 /*----------FIN DE CLASES GENERALES------------*/
 
-@media screen and (max-width: 480px) {
-	#portada {
-		background-image: none;
+/*--------SECCIONES-------*/
+
+
+/*--SECCIONES METODOLOGÍA--*/
+#metodologia {
+	h1 {
+		color: $celeste;
 	}
-	.centrar { 
-		padding:  0px;
+	h3 {
+		color: $gris;
+		font-size: 27px;
+		span {
+			color: $naranja;
+		}
+		img.comilla1, img.comilla2 {
+		  position: relative;
+		  bottom: 14px;
+		}
+		img.comilla2 {
+		  top: 14px;
+		}
 	}
-	img.logo {
-  		padding-top: 81px;
+	.analisis {
+	  padding: 42px 65px;
+	}
+	.circulo-grande {
+	    background-color: #ff4016;
+		border-radius: 50%;
+		width: 400px;
+		height: 400px;
+		margin: 0 auto;
+		padding: 4px;
+	  	.circulo {
+			border-radius: 50%;
+			border: 2px dashed white;
+			width: 390px;
+			height: 390px;
+			padding: 81px;
+			h4 {
+				color: white;
+				line-height: 1.2;
+			}
+		}
+	}
+	.pilares,.analisis {
+	 	h3 {
+			color: $naranja;
+		}
+		h4 {
+			color: $gris;
+			padding: 11px;
+		}
+	}
+	.pilares {
+	 	padding-top: 210px;
 	}
 }
 
+.izquierda, 
+.centro, 
+.derecha {
+	border: 2px dashed $naranja;
+	position: relative;
+}
+
+.izquierda {
+  transform: rotate(-111deg);
+  float: right;
+  height: 200px;
+  top: 56px;
+}
+.derecha {
+  transform: rotate(111deg);
+  float: left;
+  height: 200px;
+  top: 56px;
+}
+
+.centro {
+  transform: rotate(90deg);
+  width: 153px;
+}
+
+/*--SECCIONES POSTULANTES--*/
+#postulante {
+	background-image: url(../assets/img/img-02.png);
+	h1,h3,h2, h4 {
+		color: white;
+	}
+	.col-md-4 {
+		.potencial {
+		  position: relative;
+		}
+		.circle {
+		    float: right;
+			left: 111px;
+			position: relative;
+			bottom: 20px;
+			z-index: 1;
+		  img {
+		  	  border-radius: 50%;
+		  	  width: 80%;
+		  }
+		}
+		.subtitulo {
+		  padding-bottom: 1px;
+		  border-bottom: 2px dashed white;
+		}
+	}
+	.col-md-4.li {
+	  border-left: 2px dashed white;
+	  	.informacion {
+		  padding: 28px 0px 90px 70px;
+		}
+	}
+	.btn-contactos-celeste {
+		padding: 14px 49px;
+  		font-size: 21px;
+  		background-color:$celeste;
+  		border-color: white;
+  		border-radius: 30px;
+	}
+	.flecha.text-center {
+  		bottom: -84px;
+  	}
+}
+
+
+
+/*--SECCIONES FAROLITO EMPRESA--*/
 #empresa {
 	h1 {
 		color: $naranja;
@@ -143,6 +263,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 }
 
+/*--SECCIONES FAROLITO CENTROS EDUCATIVOS--*/
 #centros-educativos {
 	background-color: $verde-limon;
 	h1 {
@@ -175,11 +296,12 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 }
 
+/*--SECCIONES OPORTUNIDADES--*/
 #oportunidades {
 	background-image: url(../assets/img/img-oportunidades-24.png);
 	background-size: cover;
 	.container {
-		padding: 42px 145px 35px;
+		padding: 42px 145px 63px;
 	}
 	.cuadro {
 		background-color: white;
@@ -216,14 +338,13 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	  background: gray;
 	  border-color: gray;
 	}
+	.flecha.text-center {
+  		bottom: -133px;
+  	}
 }
 
-@media screen and (max-width: 480px) {
-	.container.text-center {
-	  padding: 0px;
-	}
-}
 
+/*--SECCIONES BLOG--*/
 #blog {
 	.container {
 		padding: 56px 145px 42px;
@@ -262,13 +383,16 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		  }
 		}
 	}
-	.btn-vtodos {
+	.btn-contactos-celeste {
 		padding: 14px 49px;
   		font-size: 21px;
   		background-color:$celeste;
   		border-color: white;
   		border-radius: 30px;
 	}
+	.flecha.text-center {
+  		bottom: -77px;
+  	}
 }
 
 .background {
@@ -281,6 +405,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
   }
 }
 
+/*--SECCIONES CONTACTOS--*/
 #contactos {
 	background-color: $gris-claro;
 	h1 {
@@ -290,6 +415,142 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		padding-top: 35px;
 		input, textarea {
 			margin-bottom: 21px;
+		}
+		.btn-vertodos {
+		  position: relative;
+		  background: gray;
+		  border-color: gray;
+		}
+		.llamanos {
+			color: $gris;
+			padding: 21px 0px;
+		}
+	}
+}
+
+/*--SECCIONES FOOTER--*/
+footer {
+	background-color: $gris;
+	ul {
+		list-style: none;
+		bottom: 14px;
+  		position: relative;
+  		display: inline-block;
+		li {
+			float: left;
+			img {
+				border-radius:50px;
+				margin: 0px 7px;
+			}
+		}
+	}
+	.derechos-reservados {
+	    position: relative;
+		float: right;
+		color: white;
+		padding: 14px;
+	}
+}
+
+/*MEDIA*/
+@media screen and (max-width: 480px) {
+	#portada {
+		background-image: none;
+	}
+	.centrar { 
+		padding:  0px;
+	}
+	img.logo {
+  		padding-top: 81px;
+	}
+	.btn-contactos, .btn-contactos-celeste {
+	  margin-bottom: 56px;
+	}
+	.container.text-center,.container {
+	  padding: 0px;
+	}
+	.izquierda, 
+	.centro, 
+	.derecha {
+		border: 1px dashed $naranja;
+		position: relative;
+		width: 80%;
+	}
+	.izquierda {
+	  transform: rotate(0deg);
+	  float: none;
+	  height: 0px;
+	  top: 0px;
+	}
+	.derecha {
+	  transform: rotate(0deg);
+	  float: none;
+	  height: 0px;
+	  top: 0px;
+	}
+	.centro {
+	  transform: rotate(0deg);
+	  width: 80%;
+	}
+	#metodologia {
+		.pilares {
+	 	padding-top: 0px;
+		}
+		.analisis {
+		  padding: 0px;
+		}
+	}
+	#postulante {
+	background-image: url(../assets/img/img-02.png);
+	h1,h3,h2, h4 {
+		color: white;
+	}
+	.numero {
+	  padding-bottom: 21px;
+	  img {
+	  	  width: 14%;
+		  position: relative;
+	  }
+	}
+	.col-md-4 {
+		.potencial {
+		  position: initial;
+		}
+		.circle {
+		    float: none;
+			left: 0px;
+			position: initial;
+			bottom: 0px;
+			z-index: 1;
+			text-align: center;
+		  img {
+		  	  border-radius: 50%;
+		  	  width: 25%;
+		  }
+		}
+		.subtitulo {
+		  padding-bottom: 1px;
+		  border-bottom: 2px dashed white;
+		  text-align: center;
+		}
+	}
+		.col-md-4.li {
+		  border-left: none;
+		  margin-bottom: 49px;
+		  	.informacion {
+			  padding: 0px;
+			  text-align: center;
+			}
+		}
+		.btn-contactos-celeste {
+			padding: 14px 49px;
+	  		font-size: 21px;
+	  		background-color:$celeste;
+	  		border-color: white;
+	  		border-radius: 30px;
+		}
+		.col-md-2.text-right {
+		  text-align: center;
 		}
 	}
 }
