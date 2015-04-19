@@ -1,25 +1,3 @@
-$celeste: #58C6E7;
-$gris: #9E9D9D;
-$gris-claro: #eeeeee;
-$naranja: #ff4016;
-$verde-limon: #77d248;
-$amarillo:#fcf07e;
-$mostaza: #ffd13f;
-$tomate:tomato;
-
-h1, h2, h3, h4, h5, h6, p, a, strong {
-	font-family: 'Lato', sans-serif;
-}
-h1 {
-	margin-top: 35px;
-}
-
-.container.text-center, .container {
-  padding: 56px 84px 42px;
-}
-
-
-
 nav.navbar.navbar-default.navbar-fixed-top {
 	background-color: transparent;
 	border-color: transparent;
@@ -49,13 +27,16 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 }
 
+/*SECCIONES*/
+
+/*--SECCIONES PORTADA--*/
 #portada {
 	background-image: url(../assets/img/img-home.png);
 	background-size: cover;
 	height: 100%;
 	display: table;
-  	width: 100%;
-  	.row {
+  width: 100%;
+  .row {
 	  text-align: right;
 	  vertical-align: middle;
 	  display: table-cell;
@@ -83,33 +64,13 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 }
 
-/*----------CLASES GENERALES-------------*/
-.centrar {
-	padding: 0px 114px;
-}
-.flecha.text-center {
-  bottom: -145px;
-  position: relative;
-  img {
-  	border-radius: 50%;
-  }
-}
-.pt {
-	padding-top: 42px;
-}
-
-.mt {
-	margin-top: 35px;
-}
-
-
-/*----------FIN DE CLASES GENERALES------------*/
-
-/*--------SECCIONES-------*/
-
-
 /*--SECCIONES METODOLOGÍA--*/
 #metodologia {
+	.flecha.arriba.hidden-xs {
+	  bottom: -36px;
+		position: absolute;
+		width: 50%;
+	}
 	h1 {
 		color: $celeste;
 	}
@@ -131,7 +92,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	  padding: 42px 65px;
 	}
 	.circulo-grande {
-	    background-color: #ff4016;
+	  background-color: #ff4016;
 		border-radius: 50%;
 		width: 400px;
 		height: 400px;
@@ -161,37 +122,47 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.pilares {
 	 	padding-top: 210px;
 	}
+	.btn-contactos-celeste {
+		padding: 14px 49px;
+  	font-size: 21px;
+  	background-color:$celeste;
+  	border-color: white;
+  	border-radius: 30px;
+	}
+	.flecha.text-center {
+  	bottom: -77px;
+  }
 }
+	/*lineas que salen del circulo grande*/
+	.izquierda, 
+	.centro, 
+	.derecha {
+		border: 2px dashed $naranja;
+		position: relative;
+	}
 
-.izquierda, 
-.centro, 
-.derecha {
-	border: 2px dashed $naranja;
-	position: relative;
-}
-
-.izquierda {
-  transform: rotate(-111deg);
-  float: right;
-  height: 200px;
-  top: 56px;
-}
-.derecha {
-  transform: rotate(111deg);
-  float: left;
-  height: 200px;
-  top: 56px;
-}
-
-.centro {
-  transform: rotate(90deg);
-  width: 153px;
-}
+	.izquierda, .derecha {
+		height: 200px;
+	  top: 56px;
+	}
+	.izquierda {
+	  transform: rotate(-111deg);
+	  float: right;
+	}
+	.derecha {
+	  transform: rotate(111deg);
+	  float: left;
+	}
+	.centro {
+	  transform: rotate(90deg);
+	  width: 153px;
+	}
 
 /*--SECCIONES POSTULANTES--*/
 #postulante {
 	background-image: url(../assets/img/img-02.png);
-	h1,h3,h2, h4 {
+	background-size: cover;
+	h1, h3, h2, h4 {
 		color: white;
 	}
 	.col-md-4 {
@@ -199,14 +170,14 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		  position: relative;
 		}
 		.circle {
-		    float: right;
+		  float: right;
 			left: 111px;
 			position: relative;
 			bottom: 20px;
 			z-index: 1;
 		  img {
-		  	  border-radius: 50%;
-		  	  width: 80%;
+		  	border-radius: 50%;
+		  	width: 80%;
 		  }
 		}
 		.subtitulo {
@@ -217,22 +188,20 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.col-md-4.li {
 	  border-left: 2px dashed white;
 	  	.informacion {
-		  padding: 28px 0px 90px 70px;
+		  	padding: 28px 0px 90px 70px;
 		}
 	}
 	.btn-contactos-celeste {
 		padding: 14px 49px;
-  		font-size: 21px;
-  		background-color:$celeste;
-  		border-color: white;
-  		border-radius: 30px;
+  	font-size: 21px;
+  	background-color:$celeste;
+  	border-color: white;
+  	border-radius: 30px;
 	}
 	.flecha.text-center {
   		bottom: -84px;
-  	}
+  }
 }
-
-
 
 /*--SECCIONES FAROLITO EMPRESA--*/
 #empresa {
@@ -245,7 +214,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		padding-bottom: 21px;
 		margin-top: 28px;
 	}
-	h4,h3,p {
+	h4,h3 {
 		color: $gris;
 	}
 	strong {
@@ -253,10 +222,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 	.btn-contactos {
 		padding: 14px 49px;
-  		font-size: 21px;
-  		background-color:$naranja;
-  		border-color: $naranja;
-  		border-radius: 30px;
+  	font-size: 21px;
+  	background-color:$naranja;
+  	border-color: $naranja;
+  	border-radius: 30px;
 	}
 	.flecha.text-center {
 		bottom: -77px;
@@ -275,7 +244,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		padding-bottom: 21px;
 		margin-top: 28px;
 	}
-	h4,h3,p {
+	h4,h3 {
 		color: white;
 	}
 	strong {
@@ -283,10 +252,10 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 	.btn-contactos {
 		padding: 14px 49px;
-  		font-size: 21px;
-  		background-color:transparent;
-  		border-color: white;
-  		border-radius: 30px;
+  	font-size: 21px;
+  	background-color:transparent;
+  	border-color: white;
+  	border-radius: 30px;
 	}
 	.img-circular {
 		border-radius: 50px;
@@ -330,7 +299,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 		  border-radius: 30px;
 		  float: right;
 		  position: relative;
-	  	  bottom: 56px;
+	  	bottom: 56px;
 		}
 	}
 	.btn-vertodos {
@@ -342,7 +311,6 @@ nav.navbar.navbar-default.navbar-fixed-top {
   		bottom: -133px;
   	}
 }
-
 
 /*--SECCIONES BLOG--*/
 #blog {
@@ -361,11 +329,11 @@ nav.navbar.navbar-default.navbar-fixed-top {
 				bottom: 42px;
 			}
 			.comentario {
-			  	text-align: left;
-			  	padding: 20px;
-			  	position: relative;
-			  	bottom: 24px;
-			  	line-height: 1.6;
+			  text-align: left;
+			  padding: 20px;
+			  position: relative;
+			  bottom: 24px;
+			  line-height: 1.6;
 			}
 		}
 	}	
@@ -385,16 +353,17 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 	.btn-contactos-celeste {
 		padding: 14px 49px;
-  		font-size: 21px;
-  		background-color:$celeste;
-  		border-color: white;
-  		border-radius: 30px;
+  	font-size: 21px;
+  	background-color:$celeste;
+  	border-color: white;
+  	border-radius: 30px;
 	}
 	.flecha.text-center {
-  		bottom: -77px;
-  	}
+  	bottom: -77px;
+  }
 }
 
+/*Efecto hover del Blog*/
 .background {
 	background-color: $gris-claro;
 }
@@ -414,7 +383,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.formulario {
 		padding-top: 35px;
 		input, textarea {
-			margin-bottom: 21px;
+		margin-bottom: 21px;
 		}
 		.btn-vertodos {
 		  position: relative;
@@ -434,8 +403,8 @@ footer {
 	ul {
 		list-style: none;
 		bottom: 14px;
-  		position: relative;
-  		display: inline-block;
+  	position: relative;
+  	display: inline-block;
 		li {
 			float: left;
 			img {
@@ -445,7 +414,7 @@ footer {
 		}
 	}
 	.derechos-reservados {
-	    position: relative;
+	   position: relative;
 		float: right;
 		color: white;
 		padding: 14px;
@@ -456,6 +425,8 @@ footer {
 @media screen and (max-width: 480px) {
 	#portada {
 		background-image: none;
+		background-color: aliceblue;
+		height: 0px;
 	}
 	.centrar { 
 		padding:  0px;
@@ -467,7 +438,8 @@ footer {
 	  margin-bottom: 56px;
 	}
 	.container.text-center,.container {
-	  padding: 0px;
+	  padding: 0px 28px;
+	  padding-top: 14px;
 	}
 	.izquierda, 
 	.centro, 
@@ -499,58 +471,77 @@ footer {
 		.analisis {
 		  padding: 0px;
 		}
+		.row.m-0.text-center.pt {
+  		padding-top: 0px;
+		}
 	}
 	#postulante {
-	background-image: url(../assets/img/img-02.png);
-	h1,h3,h2, h4 {
-		color: white;
-	}
-	.numero {
-	  padding-bottom: 21px;
-	  img {
-	  	  width: 14%;
-		  position: relative;
-	  }
-	}
-	.col-md-4 {
-		.potencial {
-		  position: initial;
+		background-image: url(../assets/img/img-02.png);
+		h1,h3,h2, h4 {
+			color: white;
 		}
-		.circle {
+		.numero {
+	  	padding-bottom: 21px;
+	  	img {
+	  	  width: 14%;
+		  	position: relative;
+	  	}
+		}
+		.col-md-4 {
+			.potencial {
+		 		position: initial;
+			}
+			.circle {	
 		    float: none;
-			left: 0px;
-			position: initial;
-			bottom: 0px;
-			z-index: 1;
-			text-align: center;
-		  img {
+				left: 0px;
+				position: initial;
+				bottom: 0px;
+				z-index: 1;
+				text-align: center;
+		 		img {
 		  	  border-radius: 50%;
 		  	  width: 25%;
-		  }
+		  	}
+			}
+			.subtitulo {
+		 	 	padding-bottom: 1px;
+		  	border-bottom: 2px dashed white;
+		  	text-align: center;
+			}
 		}
-		.subtitulo {
-		  padding-bottom: 1px;
-		  border-bottom: 2px dashed white;
-		  text-align: center;
-		}
-	}
 		.col-md-4.li {
 		  border-left: none;
 		  margin-bottom: 49px;
-		  	.informacion {
+		  .informacion {
 			  padding: 0px;
 			  text-align: center;
 			}
 		}
 		.btn-contactos-celeste {
 			padding: 14px 49px;
-	  		font-size: 21px;
-	  		background-color:$celeste;
-	  		border-color: white;
-	  		border-radius: 30px;
+	  	font-size: 21px;
+	  	background-color:$celeste;
+	  	border-color: white;
+	  	border-radius: 30px;
 		}
 		.col-md-2.text-right {
 		  text-align: center;
+		}
+	}
+	#contactos {
+		.boton.text-right, .llamanos {
+  		text-align: center;
+		}
+	}
+	footer {
+		.container-fluid {
+			text-align: center;
+			.derechos-reservados {
+  			float: inherit;
+			}
+			ul.iconos-redes.clearfix {
+  			padding-right: 40px;
+			}
 		}
 	}
 }

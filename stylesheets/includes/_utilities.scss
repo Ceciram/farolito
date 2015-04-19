@@ -21,3 +21,45 @@ $margins-paddings: ("p": "padding", "m": "margin", "pt": "padding-top", "pb": "p
 .mb {
 	margin-bottom: 49px;
 }
+
+$celeste: #58C6E7;
+$gris: #9E9D9D;
+$gris-claro: #eeeeee;
+$naranja: #ff4016;
+$verde-limon: #77d248;
+$amarillo:#fcf07e;
+$mostaza: #ffd13f;
+$tomate:tomato;
+
+h1, h2, h3, h4, h5, h6, p, a, strong {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.4;
+}
+h1 {
+	margin-top: 35px;
+}
+li, input.form-control, textarea.form-control {
+	font-size: 15px;
+}
+
+.container.text-center, .container {
+  padding: 56px 84px 42px;
+}
+
+.centrar {
+	padding: 0px 114px;
+}
+.flecha.text-center, .flecha.arriba {
+  bottom: -145px;
+  position: relative;
+  img {
+  	border-radius: 50%;
+  }
+}
+.pt {
+	padding-top: 42px;
+}
+
+.mt {
+	margin-top: 35px;
+}
