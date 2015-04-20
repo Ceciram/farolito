@@ -6,20 +6,21 @@ nav{
 
 #sobre-nosotros{
 	background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 500px;
-	h1,h4 {
+	h1, h3 {
 		color: white;
 	}
 	.flecha.text-center {
-	  bottom: -261px;
+	  bottom: -194px;
 	}
 }
 #fundadores, #asesores, #committe {
 	.container.text-center, .container {
 	  padding: 0px 84px 0px;
 	}
-	h1,h4 {
+	h1,h3,h4 {
 		color: $gris;
 	}
 	.foto {
@@ -35,9 +36,6 @@ nav{
 	  padding-bottom: 7px;
 	  h3 {
 	  	color: $celeste;
-	  }
-	  h4 {
-	  	color: $gris;
 	  }
 	}
 	.parrafo {

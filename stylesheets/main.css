@@ -5978,7 +5978,7 @@ h1, h2, h3, h4, h5, h6, p, a, strong {
 h1 {
   margin-top: 35px; }
 
-li, input.form-control, textarea.form-control {
+p, li, input.form-control, textarea.form-control {
   font-size: 15px; }
 
 .container.text-center, .container {
@@ -6427,16 +6427,17 @@ nav button.btn.btn-default {
 
 #sobre-nosotros {
   background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 500px; }
-  #sobre-nosotros h1, #sobre-nosotros h4 {
+  #sobre-nosotros h1, #sobre-nosotros h3 {
     color: white; }
   #sobre-nosotros .flecha.text-center {
-    bottom: -261px; }
+    bottom: -194px; }
 
 #fundadores .container.text-center, #fundadores .container, #asesores .container.text-center, #asesores .container, #committe .container.text-center, #committe .container {
   padding: 0px 84px 0px; }
-#fundadores h1, #fundadores h4, #asesores h1, #asesores h4, #committe h1, #committe h4 {
+#fundadores h1, #fundadores h3, #fundadores h4, #asesores h1, #asesores h3, #asesores h4, #committe h1, #committe h3, #committe h4 {
   color: #9E9D9D; }
 #fundadores .foto, #asesores .foto, #committe .foto {
   border-radius: 50%;
@@ -6449,8 +6450,6 @@ nav button.btn.btn-default {
   padding-bottom: 7px; }
   #fundadores .nombre-cargo h3, #asesores .nombre-cargo h3, #committe .nombre-cargo h3 {
     color: #58C6E7; }
-  #fundadores .nombre-cargo h4, #asesores .nombre-cargo h4, #committe .nombre-cargo h4 {
-    color: #9E9D9D; }
 #fundadores .parrafo, #asesores .parrafo, #committe .parrafo {
   padding: 0px 14px; }
 
