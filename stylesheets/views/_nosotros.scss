@@ -1,7 +1,12 @@
 nav{
+	position: fixed !important;
+	z-index: 2000;
+	.container-fluid {
+  		background: paleturquoise;
+	}
 	button.btn.btn-default {
-  	padding: 3px 28px;
-  }
+  		padding: 3px 28px;
+  	}
 }
 
 #sobre-nosotros{

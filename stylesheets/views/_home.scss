@@ -1,6 +1,8 @@
-nav.navbar.navbar-default.navbar-fixed-top {
+nav.navbar.navbar-default {
 	background-color: transparent;
 	border-color: transparent;
+	position: absolute;
+  width: 100%;
 	.btn-default {
 		background-color: gray;
 		color: white;
@@ -17,15 +19,63 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	}
 	li {
 	  font-size: 18px;
-	  padding: 0px 14px;
+	}
+	select.opciones {
+	  margin: 14px 0px;
+	  border-radius: 7px;
+	  color: gray;
 	}
 }
+
 
 @media screen and (min-width: 480px) {
 	.crear-perfil {
 		visibility: hidden;
 	}
 }
+
+/*POP AP*/
+.modal-backdrop.fade.in {
+  background-color: rgb(211, 210, 210);
+  opacity: 0.8;
+}
+.modal-dialog {
+  z-index: 2000;
+  width: 40%;
+  margin: 100px auto;
+  .modal-content {
+	  border: 6px solid gainsboro;
+	  padding: 30px 60px;
+	  border-radius: 21px;
+	  .modal-header {
+  		border-bottom: none;
+			h2#myModalLabel {
+			  text-align: center;
+			  color: deepskyblue;
+			  letter-spacing: 1px;
+			}
+		}
+		.modal-body {
+			button.btn.btn-primary {
+			  border-radius: 14px;
+			  background-color: deepskyblue;
+			  border: deepskyblue;
+			  padding: 10px 30px;
+			}
+			a {
+			  color: darkgray;
+			}
+			a:hover {
+			  text-decoration: none;
+			  color: deepskyblue;
+			}
+		}
+		.modal-footer {
+		  border-top: none;
+		}
+	}
+}
+
 
 /*SECCIONES*/
 
@@ -69,7 +119,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 	.flecha.arriba.hidden-xs {
 	  bottom: -36px;
 		position: absolute;
-		width: 50%;
+		width: 80%;
 	}
 	h1 {
 		color: $celeste;
@@ -541,6 +591,40 @@ footer {
 			}
 			ul.iconos-redes.clearfix {
   			padding-right: 40px;
+			}
+		}
+	}
+	/*ESTILOS DEL NAV-RESPONSIVE*/
+	nav {
+		position: fixed !important;
+	  z-index: 1000;
+	  height: 100%;
+	  .container-fluid {
+		  height: 100%;
+		  .navbar-header {
+			  background: paleturquoise;
+			}
+		  div#bs-example-navbar-collapse-1 {
+			  background: $celeste;
+			  height: 100%;
+			  text-align: center;
+			  ul{
+			  	li{
+		  			padding: 20px;
+		  			border-bottom: 2px dashed white;
+		  			font-size: 24px;
+		  			a {
+		  				color: white;
+
+		  			}
+		  			a:hover {
+		  				color: $celeste;
+		  			}
+			  	}
+			  	li:hover {
+			  		background: white;
+			  	}
+			  }
 			}
 		}
 	}

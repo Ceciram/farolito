@@ -9,7 +9,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default">
 			  	<div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 				    <div class="navbar-header">
@@ -24,11 +24,22 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      	<ul class="nav navbar-nav navbar-right">
+				      		<li class="hidden-lg hidden-md hidden-sm"><a href="#">Home</a></li>
 					        <li><a href="nosotros.html">Sobre nosotros</a></li>
-					        <li><a href="#">Oportunidades</a></li>
-					        <li>
+					        <li class="hidden-lg hidden-md hidden-sm"><a href="#">Ingresa tu cuenta</a></li>
+					        <li class="hidden-lg hidden-md hidden-sm"><a href="#">Crear cuenta</a></li>
+					        <li class="hidden-lg hidden-md hidden-sm"><a href="#">Blog</a></li>
+					        <li class="hidden-lg hidden-md hidden-sm" style="border-bottom: none; "><a href="#">Contáctanos</a></li>
+					        <li class="hidden-xs"><a href="#">Oportunidades</a></li>
+					        <li class="hidden-xs">
+					        	<select class="opciones">
+					        		<option>Es</option>
+					        		<option>In</option>
+					        	</select>
+					        </li>
+					        <li class="hidden-xs">
 					        	<a href="#">
-					        	<button type="submit" class="btn btn-default">INGRESAR</button>
+					        	<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">INGRESAR</button>
 					        	</a>
 					        </li>
 					    </ul>
@@ -365,6 +376,23 @@
 			</div>
 		</footer>
 
+		<!---pop ap-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h2 class="modal-title" id="myModalLabel"><strong>Ingresa a tu cuenta</strong></h2>
+		      </div>
+		      <div class="modal-body">
+		        <input type="text" class="form-control mb-21" placeholder="Usuario">
+		        <input type="text" class="form-control mb-21" placeholder="Contraseña">
+		        <div class="text-right"><button type="button" class="btn btn-primary">INGRESAR</button></div>
+		        <h5><a href="">¿Olvidaste tu contraseña?</a></h5>
+		        <h5><a href="">¿No estás registrado? crea tu cuenta aquí</a></h5>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<!-- Javascripts de Bootstrap -->

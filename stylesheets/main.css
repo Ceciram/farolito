@@ -6002,27 +6002,64 @@ p, li, input.form-control, textarea.form-control {
 @media (min-width: 768px) {
   .container-mediano {
     width: 970px; } }
-nav.navbar.navbar-default.navbar-fixed-top {
+nav.navbar.navbar-default {
   background-color: transparent;
-  border-color: transparent; }
-  nav.navbar.navbar-default.navbar-fixed-top .btn-default {
+  border-color: transparent;
+  position: absolute;
+  width: 100%; }
+  nav.navbar.navbar-default .btn-default {
     background-color: gray;
     color: white;
     border-radius: 25px; }
-  nav.navbar.navbar-default.navbar-fixed-top .navbar-toggle {
+  nav.navbar.navbar-default .navbar-toggle {
     float: left; }
-  nav.navbar.navbar-default.navbar-fixed-top .btn.btn-default.crear-perfil {
+  nav.navbar.navbar-default .btn.btn-default.crear-perfil {
     float: right;
     background-color: #ff4016;
     border-color: #ff4016;
     margin: 7px; }
-  nav.navbar.navbar-default.navbar-fixed-top li {
-    font-size: 18px;
-    padding: 0px 14px; }
+  nav.navbar.navbar-default li {
+    font-size: 18px; }
+  nav.navbar.navbar-default select.opciones {
+    margin: 14px 0px;
+    border-radius: 7px;
+    color: gray; }
 
 @media screen and (min-width: 480px) {
   .crear-perfil {
     visibility: hidden; } }
+/*POP AP*/
+.modal-backdrop.fade.in {
+  background-color: #d3d2d2;
+  opacity: 0.8; }
+
+.modal-dialog {
+  z-index: 2000;
+  width: 40%;
+  margin: 100px auto; }
+  .modal-dialog .modal-content {
+    border: 6px solid gainsboro;
+    padding: 30px 60px;
+    border-radius: 21px; }
+    .modal-dialog .modal-content .modal-header {
+      border-bottom: none; }
+      .modal-dialog .modal-content .modal-header h2#myModalLabel {
+        text-align: center;
+        color: deepskyblue;
+        letter-spacing: 1px; }
+    .modal-dialog .modal-content .modal-body button.btn.btn-primary {
+      border-radius: 14px;
+      background-color: deepskyblue;
+      border: deepskyblue;
+      padding: 10px 30px; }
+    .modal-dialog .modal-content .modal-body a {
+      color: darkgray; }
+    .modal-dialog .modal-content .modal-body a:hover {
+      text-decoration: none;
+      color: deepskyblue; }
+    .modal-dialog .modal-content .modal-footer {
+      border-top: none; }
+
 /*SECCIONES*/
 /*--SECCIONES PORTADA--*/
 #portada {
@@ -6057,7 +6094,7 @@ nav.navbar.navbar-default.navbar-fixed-top {
 #metodologia .flecha.arriba.hidden-xs {
   bottom: -36px;
   position: absolute;
-  width: 50%; }
+  width: 80%; }
 #metodologia h1 {
   color: #58C6E7; }
 #metodologia h3 {
@@ -6421,9 +6458,38 @@ footer {
     footer .container-fluid .derechos-reservados {
       float: inherit; }
     footer .container-fluid ul.iconos-redes.clearfix {
-      padding-right: 40px; } }
-nav button.btn.btn-default {
-  padding: 3px 28px; }
+      padding-right: 40px; }
+
+  /*ESTILOS DEL NAV-RESPONSIVE*/
+  nav {
+    position: fixed !important;
+    z-index: 1000;
+    height: 100%; }
+    nav .container-fluid {
+      height: 100%; }
+      nav .container-fluid .navbar-header {
+        background: paleturquoise; }
+      nav .container-fluid div#bs-example-navbar-collapse-1 {
+        background: #58C6E7;
+        height: 100%;
+        text-align: center; }
+        nav .container-fluid div#bs-example-navbar-collapse-1 ul li {
+          padding: 20px;
+          border-bottom: 2px dashed white;
+          font-size: 24px; }
+          nav .container-fluid div#bs-example-navbar-collapse-1 ul li a {
+            color: white; }
+          nav .container-fluid div#bs-example-navbar-collapse-1 ul li a:hover {
+            color: #58C6E7; }
+        nav .container-fluid div#bs-example-navbar-collapse-1 ul li:hover {
+          background: white; } }
+nav {
+  position: fixed !important;
+  z-index: 2000; }
+  nav .container-fluid {
+    background: paleturquoise; }
+  nav button.btn.btn-default {
+    padding: 3px 28px; }
 
 #sobre-nosotros {
   background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
