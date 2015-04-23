@@ -61,7 +61,7 @@
 		<section id="metodologia">
 			<div class="container text-center">
 				<div class="flecha arriba hidden-xs">
-					<img src="assets/iconos/iconos-15.png">
+					<a href="#metodologia"><img src="assets/iconos/iconos-15.png"></a>
 				</div>
 				<h1>Nuestra metodología</h1>
 				<div class="row m-0 pt hidden-xs">
@@ -81,16 +81,16 @@
 						</div>
 					</div>
 					<div class="col-md-6">
+						<div class="overlay hidden-xs">
+							<h4>"El corazon de nuestra metodología es nuestro propio exámen"</h4>
+							<img src="assets/iconos/iconos-19.png">
+						</div>
 						<div class="circulo-grande hidden-xs">
 							<div class="circulo hidden-xs">
 								<div class="circulo-parrafo hidden-xs">
 									<h4>Obtenemos el perfil profesional del postulante mediante un análisis completo que identifica el mejor talento para cualquier puesto. <br><br>
 									Nos basamos en 3 pilares:</h4>
 								</div>
-							</div>
-							<div class="overlay">
-								<h4>"El corazón de nuestra metodología es nuestro propio examen"</h4>
-								<div class="mujer"><img src="assets/iconos/iconos-19.png"></div>
 							</div>
 						</div>
 						<hr class="centro">
@@ -111,7 +111,7 @@
 				</div>
 				<button class="btn btn-danger btn-contactos-celeste mt hidden-xs">VER MÁS</button>
 				<div class="flecha text-center hidden-xs">
-					<img src="assets/iconos/iconos-15.png">
+					<a href="#postulante"><img src="assets/iconos/iconos-15.png"></a>
 				</div>
 			</div>
 		</section>
@@ -169,7 +169,7 @@
 				</div>
 				<div class="text-center"><button class="btn btn-danger btn-contactos-celeste hidden-xs">VER OPORTUNIDADES</button></div>
 				<div class="flecha text-center hidden-xs">
-					<img src="assets/iconos/iconos-15.png">
+					<a href="#empresa"><img src="assets/iconos/iconos-15.png"></a>
 				</div>
 			</div>
 		</section>
@@ -220,7 +220,7 @@
 				</div>
 				<button class="btn btn-danger btn-contactos mt">Contáctanos</button>
 				<div class="flecha text-center hidden-xs">
-					<img src="assets/iconos/iconos-15.png">
+					<a href="#centros-educativos"><img src="assets/iconos/iconos-15.png"></a>
 				</div>
 			</div>
 		</section>
@@ -270,7 +270,7 @@
 				</div>
 				<button class="btn btn-danger btn-contactos mt">Contáctanos</button>
 				<div class="flecha text-center hidden-xs">
-					<img src="assets/iconos/iconos-15.png">
+					<a href="#oportunidades"><img src="assets/iconos/iconos-15.png"></a>
 				</div>
 			</div>
 		</section>
@@ -312,7 +312,7 @@
 						<button class="btn btn-danger btn-vertodos">VER TODOS</button>
 					</div>
 					<div class="flecha text-center hidden-xs">
-						<img src="assets/iconos/iconos-15.png">
+						<a href="#blog"><img src="assets/iconos/iconos-15.png"></a>
 					</div>
 				</div>
 			</div>
@@ -348,7 +348,7 @@
 				</div>
 				<button class="btn btn-danger btn-contactos-celeste mt">VER TODOS</button>
 				<div class="flecha text-center hidden-xs">
-					<img src="assets/iconos/iconos-15.png">
+					<a href="#contactos"><img src="assets/iconos/iconos-15.png"></a>
 				</div>
 			</div>
 		</section>
@@ -400,8 +400,25 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<!-- Javascripts de Bootstrap -->
-		<script src="javascript/b3/collapse.js"></script>
-		<script src="javascript/b3/transition.js"></script>
+		<script src="javascripts/b3/collapse.js"></script>
+		<script src="javascripts/b3/transition.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="efectos.js"></script>
+		<script>
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
 	</body>	
 </html>	

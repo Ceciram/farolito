@@ -2,10 +2,10 @@
 
 $(window).scroll(function() {
 	var menu = $(this).scrollTop();
-	if ( menu > 500) {
+	if ( menu > 350) {
 		$(".navbar").addClass("scroll")
 	} 
-	else if (menu < 500) {
+	else if (menu < 350) {
 		$(".navbar").removeClass("scroll");
 	}
 });
@@ -20,6 +20,5 @@ $(document).ready(function() {
         $(this).fadeIn(1000);
     });        
 });        
-
 
 

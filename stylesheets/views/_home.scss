@@ -1,8 +1,7 @@
 nav.navbar.navbar-default {
 	background-color: transparent;
 	border-color: transparent;
-	position: absolute;
-  	width: 100%;
+	width: 100%;
 	.btn-default {
 		background-color: gray;
 		color: white;
@@ -141,14 +140,27 @@ nav.navbar.navbar-default {
 	.analisis {
 	  padding: 42px 65px;
 	}
+	.overlay{
+	  border: 2px dashed tomato;
+	  border-radius: 50%;
+	  height: 400px;
+	  width: 400px;
+	  margin: 0 auto;
+	  padding: 60px;
+	  h4 {
+	  	color: $gris;
+	  }
+	}
 	.circulo-grande {
-	  background-color: #ff4016;
+	  	background-color: #ff4016;
 		border-radius: 50%;
 		width: 400px;
 		height: 400px;
 		margin: 0 auto;
 		padding: 4px;
-		position: relative;
+		position: absolute;
+		top: 0;
+	    right: 50px;
 	  	.circulo {
 			border-radius: 50%;
 			border: 2px dashed white;
@@ -158,20 +170,6 @@ nav.navbar.navbar-default {
 			h4 {
 				color: white;
 				line-height: 1.2;
-			}
-		}
-		.overlay {
-			  position: absolute;
-			  top: 0px;
-			  height: 100%;
-			  padding: 60px;
-			  background: white;
-			  border-radius: 50%;
-			  width: 100%;
-			  z-index: 200;
-			  border: 2px dashed $tomate;
-			h4 {
-				color: $tomate;
 			}
 		}
 	}
@@ -207,7 +205,7 @@ nav.navbar.navbar-default {
 	}
 
 	.izquierda, .derecha {
-		height: 200px;
+		height: 169px;
 	  top: 56px;
 	}
 	.izquierda {
@@ -220,7 +218,8 @@ nav.navbar.navbar-default {
 	}
 	.centro {
 	  transform: rotate(90deg);
-	  width: 153px;
+	  width: 98px;
+  	  top: 32px;
 	}
 
 /*--SECCIONES POSTULANTES--*/
@@ -532,6 +531,7 @@ footer {
 	.centro {
 	  transform: rotate(0deg);
 	  width: 80%;
+	  top: 0px;
 	}
 	#metodologia {
 		.pilares {
