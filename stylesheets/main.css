@@ -6094,7 +6094,7 @@ nav.navbar.navbar-default {
 #metodologia .flecha.arriba.hidden-xs {
   bottom: -36px;
   position: absolute;
-  width: 80%; }
+  width: 50%; }
 #metodologia h1 {
   color: #58C6E7; }
 #metodologia h3 {
@@ -6115,16 +6115,29 @@ nav.navbar.navbar-default {
   width: 400px;
   height: 400px;
   margin: 0 auto;
-  padding: 4px; }
+  padding: 4px;
+  position: relative; }
   #metodologia .circulo-grande .circulo {
     border-radius: 50%;
     border: 2px dashed white;
-    width: 390px;
-    height: 390px;
+    width: 100%;
+    height: 100%;
     padding: 81px; }
     #metodologia .circulo-grande .circulo h4 {
       color: white;
       line-height: 1.2; }
+  #metodologia .circulo-grande .overlay {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    padding: 60px;
+    background: white;
+    border-radius: 50%;
+    width: 100%;
+    z-index: 200;
+    border: 2px dashed tomato; }
+    #metodologia .circulo-grande .overlay h4 {
+      color: tomato; }
 #metodologia .pilares h3, #metodologia .analisis h3 {
   color: #ff4016; }
 #metodologia .pilares h4, #metodologia .analisis h4 {
@@ -6184,6 +6197,9 @@ nav.navbar.navbar-default {
   #postulante .col-md-4 .subtitulo {
     padding-bottom: 1px;
     border-bottom: 2px dashed white; }
+    #postulante .col-md-4 .subtitulo h3 {
+      margin-top: 0px;
+      font-size: 23px; }
   #postulante .col-md-4.li {
     border-left: 2px dashed white; }
     #postulante .col-md-4.li .informacion {
@@ -6431,10 +6447,16 @@ footer {
       #postulante .col-md-4 .circle img {
         border-radius: 50%;
         width: 25%; }
+    #postulante .col-md-4 .circle.pt-42.circulo2 {
+      margin-top: -45px; }
+    #postulante .col-md-4 .circle.pt-42.circulo3 {
+      margin-top: -45px; }
     #postulante .col-md-4 .subtitulo {
       padding-bottom: 1px;
       border-bottom: 2px dashed white;
       text-align: center; }
+      #postulante .col-md-4 .subtitulo h3 {
+        padding: 0px 25px; }
     #postulante .col-md-4.li {
       border-left: none;
       margin-bottom: 49px; }
@@ -6484,10 +6506,8 @@ footer {
         nav .container-fluid div#bs-example-navbar-collapse-1 ul li:hover {
           background: white; } }
 nav {
-  position: fixed !important;
+  position: fixed;
   z-index: 2000; }
-  nav .container-fluid {
-    background: paleturquoise; }
   nav button.btn.btn-default {
     padding: 3px 28px; }
 

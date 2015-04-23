@@ -2,7 +2,7 @@ nav.navbar.navbar-default {
 	background-color: transparent;
 	border-color: transparent;
 	position: absolute;
-  width: 100%;
+  	width: 100%;
 	.btn-default {
 		background-color: gray;
 		color: white;
@@ -119,7 +119,7 @@ nav.navbar.navbar-default {
 	.flecha.arriba.hidden-xs {
 	  bottom: -36px;
 		position: absolute;
-		width: 80%;
+		width: 50%;
 	}
 	h1 {
 		color: $celeste;
@@ -148,15 +148,30 @@ nav.navbar.navbar-default {
 		height: 400px;
 		margin: 0 auto;
 		padding: 4px;
+		position: relative;
 	  	.circulo {
 			border-radius: 50%;
 			border: 2px dashed white;
-			width: 390px;
-			height: 390px;
+			width: 100%;
+			height: 100%;
 			padding: 81px;
 			h4 {
 				color: white;
 				line-height: 1.2;
+			}
+		}
+		.overlay {
+			  position: absolute;
+			  top: 0px;
+			  height: 100%;
+			  padding: 60px;
+			  background: white;
+			  border-radius: 50%;
+			  width: 100%;
+			  z-index: 200;
+			  border: 2px dashed $tomate;
+			h4 {
+				color: $tomate;
 			}
 		}
 	}
@@ -233,6 +248,10 @@ nav.navbar.navbar-default {
 		.subtitulo {
 		  padding-bottom: 1px;
 		  border-bottom: 2px dashed white;
+		  h3 {
+		  	margin-top: 0px;
+		  	font-size: 23px;
+		  }
 		}
 	}
 	.col-md-4.li {
@@ -553,10 +572,19 @@ footer {
 		  	  width: 25%;
 		  	}
 			}
+			.circle.pt-42.circulo2 {
+			  margin-top: -45px;
+			}
+			.circle.pt-42.circulo3 {
+			  margin-top: -45px;
+			}
 			.subtitulo {
 		 	 	padding-bottom: 1px;
 		  	border-bottom: 2px dashed white;
 		  	text-align: center;
+		  	h3 {
+		  		padding: 0px 25px;
+		  	}
 			}
 		}
 		.col-md-4.li {
