@@ -44,12 +44,13 @@ nav.navbar.navbar-default {
   z-index: 2000;
   width: 40%;
   margin: 100px auto;
-  .modal-content {
+  .modal-content.inicial {
 	  border: 6px solid gainsboro;
 	  padding: 30px 60px;
 	  border-radius: 21px;
-	  .modal-header {
+	  .modal-header.uno {
   		border-bottom: none;
+  		background: none;
 			h2#myModalLabel {
 			  text-align: center;
 			  color: deepskyblue;
@@ -86,7 +87,7 @@ nav.navbar.navbar-default {
 	background-size: cover;
 	height: 100%;
 	display: table;
-  width: 100%;
+  	width: 100%;
   .row {
 	  text-align: right;
 	  vertical-align: middle;
@@ -117,10 +118,13 @@ nav.navbar.navbar-default {
 
 /*--SECCIONES METODOLOGÍA--*/
 #metodologia {
+	.container.text-center {
+	  padding-top: 0px;
+	}
 	.flecha.arriba.hidden-xs {
-	  bottom: -36px;
-		position: absolute;
-		width: 50%;
+	  top: -30px;
+	  width: 100%;
+	  position: relative;
 	}
 	h1 {
 		color: $celeste;

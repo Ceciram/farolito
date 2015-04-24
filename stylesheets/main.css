@@ -6055,27 +6055,28 @@ nav.navbar.navbar-default {
   z-index: 2000;
   width: 40%;
   margin: 100px auto; }
-  .modal-dialog .modal-content {
+  .modal-dialog .modal-content.inicial {
     border: 6px solid gainsboro;
     padding: 30px 60px;
     border-radius: 21px; }
-    .modal-dialog .modal-content .modal-header {
-      border-bottom: none; }
-      .modal-dialog .modal-content .modal-header h2#myModalLabel {
+    .modal-dialog .modal-content.inicial .modal-header.uno {
+      border-bottom: none;
+      background: none; }
+      .modal-dialog .modal-content.inicial .modal-header.uno h2#myModalLabel {
         text-align: center;
         color: deepskyblue;
         letter-spacing: 1px; }
-    .modal-dialog .modal-content .modal-body button.btn.btn-primary {
+    .modal-dialog .modal-content.inicial .modal-body button.btn.btn-primary {
       border-radius: 14px;
       background-color: deepskyblue;
       border: deepskyblue;
       padding: 10px 30px; }
-    .modal-dialog .modal-content .modal-body a {
+    .modal-dialog .modal-content.inicial .modal-body a {
       color: darkgray; }
-    .modal-dialog .modal-content .modal-body a:hover {
+    .modal-dialog .modal-content.inicial .modal-body a:hover {
       text-decoration: none;
       color: deepskyblue; }
-    .modal-dialog .modal-content .modal-footer {
+    .modal-dialog .modal-content.inicial .modal-footer {
       border-top: none; }
 
 /*SECCIONES*/
@@ -6109,10 +6110,12 @@ nav.navbar.navbar-default {
     width: 100%; }
 
 /*--SECCIONES METODOLOG├ìA--*/
+#metodologia .container.text-center {
+  padding-top: 0px; }
 #metodologia .flecha.arriba.hidden-xs {
-  bottom: -36px;
-  position: absolute;
-  width: 50%; }
+  top: -30px;
+  width: 100%;
+  position: relative; }
 #metodologia h1 {
   color: #58C6E7; }
 #metodologia h3 {
