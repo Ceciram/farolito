@@ -6,6 +6,7 @@ nav.navbar.navbar-default {
 		background-color: gray;
 		color: white;
 		border-radius: 25px;
+		margin-top: -7px;
 	}
 	.navbar-toggle {
 		float: left;
@@ -15,6 +16,7 @@ nav.navbar.navbar-default {
 		background-color: $naranja;
 		border-color: $naranja;
 		margin: 7px;
+		font-size: 12px;
 	}
 	li {
 	  font-size: 18px;
@@ -288,13 +290,6 @@ nav.navbar.navbar-default {
 	strong {
 		color: $celeste;
 	}
-	.btn-contactos {
-		padding: 14px 49px;
-  	font-size: 21px;
-  	background-color:$naranja;
-  	border-color: $naranja;
-  	border-radius: 30px;
-	}
 	.flecha.text-center {
 		bottom: -77px;
 	}
@@ -317,13 +312,6 @@ nav.navbar.navbar-default {
 	}
 	strong {
 		color: $celeste;
-	}
-	.btn-contactos {
-		padding: 14px 49px;
-  	font-size: 21px;
-  	background-color:transparent;
-  	border-color: white;
-  	border-radius: 30px;
 	}
 	.img-circular {
 		border-radius: 50px;
@@ -382,8 +370,8 @@ nav.navbar.navbar-default {
 
 /*--SECCIONES BLOG--*/
 #blog {
-	.container {
-		padding: 56px 145px 42px;
+	.container.text-center, .container {
+	  padding: 56px 84px 42px;
 	}
 	h1 {
 		color: $gris;
@@ -405,27 +393,6 @@ nav.navbar.navbar-default {
 			}
 		}
 	}	
-	@media screen and (max-width: 480px) {
-		.container {
-		  padding: 0px;
-		  .background {
-		  	background-color: white;
-		  	.comentario {
-		  		text-align: center;
-		  	}
-		  }
-		  .background:hover {
-		  	background-color: $mostaza;
-		  }
-		}
-	}
-	.btn-contactos-celeste {
-		padding: 14px 49px;
-  	font-size: 21px;
-  	background-color:$celeste;
-  	border-color: white;
-  	border-radius: 30px;
-	}
 	.flecha.text-center {
   	bottom: -77px;
   }
@@ -435,6 +402,7 @@ nav.navbar.navbar-default {
 .background {
 	background-color: $gris-claro;
 }
+
 .background:hover {
   background-color: $mostaza;
   .comentario {
@@ -451,7 +419,11 @@ nav.navbar.navbar-default {
 	.formulario {
 		padding-top: 35px;
 		input, textarea {
-		margin-bottom: 21px;
+			margin-bottom: 21px;
+			font-size: 18px;
+			color: $gris-claro;
+			padding: 16px;
+ 			border-radius: 0px;
 		}
 		.btn-vertodos {
 		  position: relative;
@@ -478,11 +450,12 @@ footer {
 			img {
 				border-radius:50px;
 				margin: 0px 7px;
+				border: 2px solid white;
 			}
 		}
 	}
 	.derechos-reservados {
-	   position: relative;
+	  position: relative;
 		float: right;
 		color: white;
 		padding: 14px;
@@ -491,71 +464,84 @@ footer {
 
 /*MEDIA*/
 @media screen and (max-width: 480px) {
+	.container.text-center, .container {
+	  padding: 0px 28px !important;
+	  padding-top: 14px !important;
+	}
+
 	#portada {
 		background-image: none;
 		background-color: aliceblue;
 		height: 0px;
+		.centrar { 
+			padding:  0px;
+			h3 {
+				padding: 0px 70px;
+			}
+			h4 {
+				padding: 18px 49px;
+			}
+			img.logo {
+	  		padding-top: 81px;
+			}
+		}
 	}
-	.centrar { 
-		padding:  0px;
-	}
-	img.logo {
-  		padding-top: 81px;
-	}
-	.btn-contactos, .btn-contactos-celeste {
-	  margin-bottom: 56px;
-	}
-	.container.text-center,.container {
-	  padding: 0px 28px;
-	  padding-top: 14px;
-	}
-	.izquierda, 
-	.centro, 
-	.derecha {
-		border: 1px dashed $naranja;
-		position: relative;
-		width: 80%;
-	}
-	.izquierda {
-	  transform: rotate(0deg);
-	  float: none;
-	  height: 0px;
-	  top: 0px;
-	}
-	.derecha {
-	  transform: rotate(0deg);
-	  float: none;
-	  height: 0px;
-	  top: 0px;
-	}
-	.centro {
-	  transform: rotate(0deg);
-	  width: 80%;
-	  top: 0px;
-	}
+
 	#metodologia {
+		.izquierda, /*lineas del circulo - ahora horizontales*/
+		.centro, 
+		.derecha {
+			border: 1px dashed $naranja;
+			position: relative;
+			width: 80%;
+		}
+		.izquierda {
+		  transform: rotate(0deg);
+		  float: none;
+		  height: 0px;
+		  top: 0px;
+		}
+		.derecha {
+		  transform: rotate(0deg);
+		  float: none;
+		  height: 0px;
+		  top: 0px;
+		}
+		.centro {
+		  transform: rotate(0deg);
+		  width: 80%;
+		  top: 0px;
+		}
 		.pilares {
-	 	padding-top: 0px;
+		 	padding-top: 0px;
 		}
 		.analisis {
-		  padding: 0px;
+			padding: 0px;
 		}
 		.row.m-0.text-center.pt {
   		padding-top: 0px;
 		}
 	}
+
 	#postulante {
 		background-image: url(../assets/img/img-02.png);
-		h1,h3,h2, h4 {
+		h1, h3, h2, h4 {
 			color: white;
+			h1 {
+				padding: 0px 70px;
+			}
 		}
-		.numero {
-	  	padding-bottom: 21px;
-	  	img {
-	  	  width: 14%;
-		  	position: relative;
-	  	}
+		.col-md-2.text-right {
+		  text-align: center;
+		  .numero {
+	  		padding-bottom: 21px;
+		  	img {
+		  	  width: 14%;
+			  	position: relative;
+		  	}
+			}
 		}
+		/*Esta es la columna de la izquierda*/
 		.col-md-4 {
 			.potencial {
 		 		position: initial;
@@ -572,11 +558,14 @@ footer {
 		  	  width: 25%;
 		  	}
 			}
-			.circle.pt-42.circulo2 {
-			  margin-top: -45px;
-			}
+			.circle.pt-42.circulo2,
 			.circle.pt-42.circulo3 {
 			  margin-top: -45px;
+			}
+			.circle, 
+			.circulo2,
+			.circulo3 {
+				padding-bottom: 14px;
 			}
 			.subtitulo {
 		 	 	padding-bottom: 1px;
@@ -587,7 +576,8 @@ footer {
 		  	}
 			}
 		}
-		.col-md-4.li {
+		/*Esta es la columna de la derecha*/
+		.col-md-4.li { 
 		  border-left: none;
 		  margin-bottom: 49px;
 		  .informacion {
@@ -595,27 +585,76 @@ footer {
 			  text-align: center;
 			}
 		}
-		.btn-contactos-celeste {
-			padding: 14px 49px;
-	  	font-size: 21px;
-	  	background-color:$celeste;
-	  	border-color: white;
-	  	border-radius: 30px;
-		}
-		.col-md-2.text-right {
-		  text-align: center;
+	}
+
+	#empresa {
+		.titulo {
+			h3 {
+				color: $naranja;
+			}
 		}
 	}
+	/*clases iguales en empresa - centro-educativos*/
+	.border {
+		padding-left: 42px;
+		padding-right: 42px;
+	}
+	.btn-contactos {
+		margin-top: 0px;
+	}
+
+	#centros-educativos {
+		h1 {
+			padding: 0px 63px;
+		}
+	}
+
+	#blog {
+		.container {
+			padding: 0px;
+		}
+		.background {
+			background-color: initial;
+			.comentario {
+				text-align: center;
+			}
+		}
+		.btn-contactos-celeste {
+			margin-top: -35px;
+		}
+	}
+
 	#contactos {
+		.formulario {
+			padding: 21px 42px;
+			input, textarea {
+				text-align: center;
+			}
+			button.btn.btn-danger.btn-vertodos {
+			  width: 100%;
+			  border-radius: 14px;
+			  font-size: 16px;
+			  padding: 14px;
+			  margin: 7px 0px 14px;
+			}
+			p {
+				font-size: 19px;
+			}
+		}
 		.boton.text-right, .llamanos {
   		text-align: center;
 		}
+	}
+
+	.btn-contactos, .btn-contactos-celeste {
+	  margin-bottom: 56px;
 	}
 	footer {
 		.container-fluid {
 			text-align: center;
 			.derechos-reservados {
   			float: inherit;
+  			padding: 0px;
 			}
 			ul.iconos-redes.clearfix {
   			padding-right: 40px;
@@ -630,7 +669,7 @@ footer {
 	  .container-fluid {
 		  height: 100%;
 		  .navbar-header {
-			  background: paleturquoise;
+			  background: $navbar !important;
 			}
 		  div#bs-example-navbar-collapse-1 {
 			  background: $celeste;

@@ -1,117 +1,112 @@
-#blog {
-	.container.text-center, .container-fluid {
-	  padding: 56px 0px 42px;
+#blogA {
+	.container-fluid {
+		padding: 91px 145px 42px;
 	}
-	h5,h4 {
+	h5 {
 		color: $gris;
 	}
-	h2,h3 {
+	h1 {
 		color: $celeste;
-	}
-	img.foto {
-		float: left;
+		letter-spacing: 1;
 	}
 	.foto-nombre {
-	 	position: relative;
-	 	padding: 7px 0px;
-	 	.nombre {
-	 		float: left;
-	 		padding-left: 7px;
-	 	}
+		.foto {
+			float: left;
+		  padding-right: 21px;
+		  padding-top: 14px;
+		}
+		.nombre {
+			h3 {
+				color: $celeste;
+			}
+			h4 {
+				color: $gris;
+			}
+		}
 	}
 	.contexto {
-		h4 {
-			line-height: 1.5;
-		}
-		img {
-			width: 100%;
-		}
+	  color: $gris;
+	  letter-spacing: 0.4;
+	  img {
+	  	padding: 14px 0px;
+	  	width: 100%;
+	  }
 	}
 	.blog-lista {
-		padding: 0px 50px;
+		.background {
+		  padding: 10px 10px 36px;
+		  img {
+		  	border-radius: 50%;
+		  }
+		}
 		h4 {
 			color: $mostaza;
 		}
-
-		.background {
-			img {
-				border-radius: 50px;
-				position: relative;
-				bottom: 42px;
-				width: 30%;
-			}
-			.comentario {
-			  	text-align: initial;
-			  	padding: 0px 18px;
-			  	position: relative;
-			  	bottom: 24px;
-			  	line-height: 1.6;
-			  	font-size: 16px;
-			}
-		}
 		.lista {
-			padding: 14px;
-			padding-bottom: 28px;
 			h5 {
 				text-align: left;
+				padding-left: 23px;
+				padding-top: 7px;
 			}
 			hr {
-				border: 1px solid $gris;
-				margin: 0px;
+				border-top: 1px solid $gris;
+				margin: 0px 0px 0px 14px;
 			}
 		}
 	}
-}
-
-#blog {
-	.container {
-		padding: 56px 145px 42px;
-	}
-	h1 {
-		color: $gris;
-	}
-	.grid-blog {
-		padding-top: 70px;
-		.background {
-			img {
-				border-radius: 50px;
-				position: relative;
-				bottom: 42px;
-			}
-			.comentario {
-		  	text-align: left;
-		  	padding: 20px;
-		  	position: relative;
-		  	bottom: 24px;
-		  	line-height: 1.6;
-			}
-		}
-	}	
 	.compartir {
 		background: steelblue;
 		color: white;
 	}
-	@media screen and (max-width: 480px) {
-		.container {
+}
+
+
+/*POP AP PARA COMPARTIR*/
+.modal-dialog {
+	.modal-content {
+		padding: 0px;
+		.modal-header {
+		  background: rgb(51, 122, 183);
+		  color: white;
+		  border-radius: 7px;
+		}
+		textarea.form-control {
+		  border: none;
+		}
+		.btn-group {
+		  padding: 5px;
+		}
+		.modal-body {
+			position: relative;
+			padding: 0px 11px;
+			border-top: 1px solid $gris-claro;
+  			border-bottom: 1px solid $gris-claro;
+			img {
+				width: 100%;
+				padding: 11px 0px;
+			}
+			h3 {
+				margin: 9px 0px;
+			}
+			p {
+				font-size: 13px;
+				color: $gris;
+			}
+		}
+		.modal-footer {
+		  background: rgb(218, 218, 218);
+		}
+	}	
+}
+
+@media screen and (max-width: 480px) {
+	#blogA {
+		.container-fluid {
 		  padding: 0px;
-		  .background {
-		  	background-color: white;
-		  	.comentario {
-		  		text-align: center;
-		  	}
-		  }
-		  .background:hover {
-		  	background-color: $mostaza;
-		  }
+		}
+		.blog-lista {
+			text-align: center;
+			padding: 42px;
 		}
 	}
-}
-.background {
-	background-color: $gris-claro;
-}
-.background:hover {
-  background-color: $mostaza;
-  .comentario {
-  	color: white;
-  }
 }

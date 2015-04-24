@@ -43,6 +43,10 @@ p, li, input.form-control, textarea.form-control {
 	font-size: 15px;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 .container.text-center, .container {
   padding: 56px 84px 42px;
 }
@@ -63,4 +67,20 @@ p, li, input.form-control, textarea.form-control {
 
 .mt {
 	margin-top: 35px;
+}
+
+.btn-contactos,
+.btn-contactos-celeste {
+	padding: 14px 49px;
+	font-size: 18px;
+	border-radius: 14px;
+}
+
+.btn-contactos {
+	background-color:$naranja;
+	border-color: $naranja;
+}
+.btn-contactos-celeste {
+		background-color:$celeste;
+		border-color: white;
 }

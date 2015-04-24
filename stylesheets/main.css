@@ -5981,6 +5981,9 @@ h1 {
 p, li, input.form-control, textarea.form-control {
   font-size: 15px; }
 
+a {
+  text-decoration: none !important; }
+
 .container.text-center, .container {
   padding: 56px 84px 42px; }
 
@@ -5999,6 +6002,20 @@ p, li, input.form-control, textarea.form-control {
 .mt {
   margin-top: 35px; }
 
+.btn-contactos,
+.btn-contactos-celeste {
+  padding: 14px 49px;
+  font-size: 18px;
+  border-radius: 14px; }
+
+.btn-contactos {
+  background-color: #ff4016;
+  border-color: #ff4016; }
+
+.btn-contactos-celeste {
+  background-color: #58C6E7;
+  border-color: white; }
+
 @media (min-width: 768px) {
   .container-mediano {
     width: 970px; } }
@@ -6009,14 +6026,16 @@ nav.navbar.navbar-default {
   nav.navbar.navbar-default .btn-default {
     background-color: gray;
     color: white;
-    border-radius: 25px; }
+    border-radius: 25px;
+    margin-top: -7px; }
   nav.navbar.navbar-default .navbar-toggle {
     float: left; }
   nav.navbar.navbar-default .btn.btn-default.crear-perfil {
     float: right;
     background-color: #ff4016;
     border-color: #ff4016;
-    margin: 7px; }
+    margin: 7px;
+    font-size: 12px; }
   nav.navbar.navbar-default li {
     font-size: 18px; }
   nav.navbar.navbar-default select.opciones {
@@ -6224,12 +6243,6 @@ nav.navbar.navbar-default {
   color: #9E9D9D; }
 #empresa strong {
   color: #58C6E7; }
-#empresa .btn-contactos {
-  padding: 14px 49px;
-  font-size: 21px;
-  background-color: #ff4016;
-  border-color: #ff4016;
-  border-radius: 30px; }
 #empresa .flecha.text-center {
   bottom: -77px; }
 
@@ -6247,12 +6260,6 @@ nav.navbar.navbar-default {
     color: white; }
   #centros-educativos strong {
     color: #58C6E7; }
-  #centros-educativos .btn-contactos {
-    padding: 14px 49px;
-    font-size: 21px;
-    background-color: transparent;
-    border-color: white;
-    border-radius: 30px; }
   #centros-educativos .img-circular {
     border-radius: 50px; }
   #centros-educativos .flecha.text-center {
@@ -6296,8 +6303,8 @@ nav.navbar.navbar-default {
     bottom: -133px; }
 
 /*--SECCIONES BLOG--*/
-#blog .container {
-  padding: 56px 145px 42px; }
+#blog .container.text-center, #blog .container {
+  padding: 56px 84px 42px; }
 #blog h1 {
   color: #9E9D9D; }
 #blog .grid-blog {
@@ -6312,21 +6319,6 @@ nav.navbar.navbar-default {
     position: relative;
     bottom: 24px;
     line-height: 1.6; }
-@media screen and (max-width: 480px) {
-  #blog .container {
-    padding: 0px; }
-    #blog .container .background {
-      background-color: white; }
-      #blog .container .background .comentario {
-        text-align: center; }
-    #blog .container .background:hover {
-      background-color: #ffd13f; } }
-#blog .btn-contactos-celeste {
-  padding: 14px 49px;
-  font-size: 21px;
-  background-color: #58C6E7;
-  border-color: white;
-  border-radius: 30px; }
 #blog .flecha.text-center {
   bottom: -77px; }
 
@@ -6347,7 +6339,11 @@ nav.navbar.navbar-default {
   #contactos .formulario {
     padding-top: 35px; }
     #contactos .formulario input, #contactos .formulario textarea {
-      margin-bottom: 21px; }
+      margin-bottom: 21px;
+      font-size: 18px;
+      color: #eeeeee;
+      padding: 16px;
+      border-radius: 0px; }
     #contactos .formulario .btn-vertodos {
       position: relative;
       background: gray;
@@ -6368,7 +6364,8 @@ footer {
       float: left; }
       footer ul li img {
         border-radius: 50px;
-        margin: 0px 7px; }
+        margin: 0px 7px;
+        border: 2px solid white; }
   footer .derechos-reservados {
     position: relative;
     float: right;
@@ -6377,48 +6374,43 @@ footer {
 
 /*MEDIA*/
 @media screen and (max-width: 480px) {
+  .container.text-center, .container {
+    padding: 0px 28px !important;
+    padding-top: 14px !important; }
+
   #portada {
     background-image: none;
     background-color: aliceblue;
     height: 0px; }
+    #portada .centrar {
+      padding: 0px; }
+      #portada .centrar h3 {
+        padding: 0px 70px; }
+      #portada .centrar h4 {
+        padding: 18px 49px; }
+      #portada .centrar img.logo {
+        padding-top: 81px; }
 
-  .centrar {
-    padding: 0px; }
-
-  img.logo {
-    padding-top: 81px; }
-
-  .btn-contactos, .btn-contactos-celeste {
-    margin-bottom: 56px; }
-
-  .container.text-center, .container {
-    padding: 0px 28px;
-    padding-top: 14px; }
-
-  .izquierda,
-  .centro,
-  .derecha {
+  #metodologia .izquierda,
+  #metodologia .centro,
+  #metodologia .derecha {
     border: 1px dashed #ff4016;
     position: relative;
     width: 80%; }
-
-  .izquierda {
+  #metodologia .izquierda {
     transform: rotate(0deg);
     float: none;
     height: 0px;
     top: 0px; }
-
-  .derecha {
+  #metodologia .derecha {
     transform: rotate(0deg);
     float: none;
     height: 0px;
     top: 0px; }
-
-  .centro {
+  #metodologia .centro {
     transform: rotate(0deg);
     width: 80%;
     top: 0px; }
-
   #metodologia .pilares {
     padding-top: 0px; }
   #metodologia .analisis {
@@ -6427,14 +6419,20 @@ footer {
     padding-top: 0px; }
 
   #postulante {
-    background-image: url(../assets/img/img-02.png); }
+    background-image: url(../assets/img/img-02.png);
+    /*Esta es la columna de la izquierda*/
+    /*Esta es la columna de la derecha*/ }
     #postulante h1, #postulante h3, #postulante h2, #postulante h4 {
       color: white; }
-    #postulante .numero {
-      padding-bottom: 21px; }
-      #postulante .numero img {
-        width: 14%;
-        position: relative; }
+      #postulante h1 h1, #postulante h3 h1, #postulante h2 h1, #postulante h4 h1 {
+        padding: 0px 70px; }
+    #postulante .col-md-2.text-right {
+      text-align: center; }
+      #postulante .col-md-2.text-right .numero {
+        padding-bottom: 21px; }
+        #postulante .col-md-2.text-right .numero img {
+          width: 14%;
+          position: relative; }
     #postulante .col-md-4 .potencial {
       position: initial; }
     #postulante .col-md-4 .circle {
@@ -6447,10 +6445,13 @@ footer {
       #postulante .col-md-4 .circle img {
         border-radius: 50%;
         width: 25%; }
-    #postulante .col-md-4 .circle.pt-42.circulo2 {
-      margin-top: -45px; }
+    #postulante .col-md-4 .circle.pt-42.circulo2,
     #postulante .col-md-4 .circle.pt-42.circulo3 {
       margin-top: -45px; }
+    #postulante .col-md-4 .circle,
+    #postulante .col-md-4 .circulo2,
+    #postulante .col-md-4 .circulo3 {
+      padding-bottom: 14px; }
     #postulante .col-md-4 .subtitulo {
       padding-bottom: 1px;
       border-bottom: 2px dashed white;
@@ -6463,22 +6464,53 @@ footer {
       #postulante .col-md-4.li .informacion {
         padding: 0px;
         text-align: center; }
-    #postulante .btn-contactos-celeste {
-      padding: 14px 49px;
-      font-size: 21px;
-      background-color: #58C6E7;
-      border-color: white;
-      border-radius: 30px; }
-    #postulante .col-md-2.text-right {
-      text-align: center; }
 
+  #empresa .titulo h3 {
+    color: #ff4016; }
+
+  /*clases iguales en empresa - centro-educativos*/
+  .border {
+    padding-left: 42px;
+    padding-right: 42px; }
+
+  .btn-contactos {
+    margin-top: 0px; }
+
+  #centros-educativos h1 {
+    padding: 0px 63px; }
+
+  #blog .container {
+    padding: 0px; }
+  #blog .background {
+    background-color: initial; }
+    #blog .background .comentario {
+      text-align: center; }
+  #blog .btn-contactos-celeste {
+    margin-top: -35px; }
+
+  #contactos .formulario {
+    padding: 21px 42px; }
+    #contactos .formulario input, #contactos .formulario textarea {
+      text-align: center; }
+    #contactos .formulario button.btn.btn-danger.btn-vertodos {
+      width: 100%;
+      border-radius: 14px;
+      font-size: 16px;
+      padding: 14px;
+      margin: 7px 0px 14px; }
+    #contactos .formulario p {
+      font-size: 19px; }
   #contactos .boton.text-right, #contactos .llamanos {
     text-align: center; }
+
+  .btn-contactos, .btn-contactos-celeste {
+    margin-bottom: 56px; }
 
   footer .container-fluid {
     text-align: center; }
     footer .container-fluid .derechos-reservados {
-      float: inherit; }
+      float: inherit;
+      padding: 0px; }
     footer .container-fluid ul.iconos-redes.clearfix {
       padding-right: 40px; }
 
@@ -6490,7 +6522,7 @@ footer {
     nav .container-fluid {
       height: 100%; }
       nav .container-fluid .navbar-header {
-        background: paleturquoise; }
+        background: #f0fbfd !important; }
       nav .container-fluid div#bs-example-navbar-collapse-1 {
         background: #58C6E7;
         height: 100%;
@@ -6508,23 +6540,29 @@ footer {
 nav {
   position: fixed;
   z-index: 2000; }
-  nav button.btn.btn-default {
-    padding: 3px 28px; }
 
 nav.navbar.navbar-default.fixed {
   position: fixed;
   background-color: #f0fbfd;
   border-radius: 0px; }
+  nav.navbar.navbar-default.fixed .navbar-brand {
+    margin-left: 14px; }
+  nav.navbar.navbar-default.fixed .btn-default {
+    background-color: gray;
+    color: white;
+    border-radius: 25px;
+    margin-top: -3px;
+    padding: 5px 31px; }
 
 #sobre-nosotros {
   background: url(../assets/img/img_nosotros-02.png) no-repeat center center scroll;
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px; }
-  #sobre-nosotros h1, #sobre-nosotros h3 {
+  #sobre-nosotros h1, #sobre-nosotros h4 {
     color: white; }
   #sobre-nosotros .flecha.text-center {
-    bottom: -100px; }
+    bottom: -145px; }
   #sobre-nosotros .somos {
     padding: 30px 280px; }
 
@@ -6538,11 +6576,13 @@ nav.navbar.navbar-default.fixed {
   padding: 4px;
   display: inline-block; }
   #fundadores .foto img, #asesores .foto img, #committe .foto img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    width: 100%; }
 #fundadores .nombre-cargo, #asesores .nombre-cargo, #committe .nombre-cargo {
   padding-bottom: 7px; }
   #fundadores .nombre-cargo h3, #asesores .nombre-cargo h3, #committe .nombre-cargo h3 {
-    color: #58C6E7; }
+    color: #58C6E7;
+    font-weight: 600; }
 #fundadores .parrafo, #asesores .parrafo, #committe .parrafo {
   padding: 0px 14px; }
 
@@ -6564,119 +6604,125 @@ nav.navbar.navbar-default.fixed {
     padding: 14px 0px; }
 
 @media screen and (max-width: 480px) {
+  nav .container-fluid div#bs-example-navbar-collapse-1 {
+    background: #58C6E7;
+    height: initial;
+    text-align: center; }
+
   nav.navbar.navbar-default.fixed {
     position: fixed;
     background-color: none;
     border-radius: 0px;
     height: 0px; }
-
-  .navbar-header {
-    background: none !important; }
-
-  .navbar-brand {
-    padding: 0px; }
-
-  #fundadores .container.text-center, #fundadores .container, #asesores .container.text-center, #asesores .container, #committe .container.text-center, #committe .container, #motivacion .container.text-center, #motivacion .container {
-    padding: 0px 28px;
-    padding-top: 14px; }
+    nav.navbar.navbar-default.fixed .navbar-header {
+      background: none; }
+    nav.navbar.navbar-default.fixed .navbar-brand {
+      padding: 4px 0px 0px 70px; }
+    nav.navbar.navbar-default.fixed .navbar-default .navbar-toggle {
+      border-color: none; }
 
   #sobre-nosotros {
     background-image: url(../assets/img/nosotros.jpg);
-    height: 100%; }
+    height: 70%; }
+    #sobre-nosotros h4 {
+      padding: 7px 49px; }
     #sobre-nosotros .somos {
       padding: 0px;
       position: relative;
       top: 40px; }
 
   #fundadores {
-    padding-top: 0px; }
+    padding-top: 0px;
+    padding-bottom: 21px; }
+    #fundadores .mb {
+      margin-bottom: 12px; }
+    #fundadores .pt {
+      padding-top: 0px; }
+    #fundadores .foto {
+      width: 120px; }
 
   .linea-estilo, .linea-separacion {
     padding: 0px; }
 
   #motivacion {
     padding-top: 42px;
-    padding-bottom: 42px; } }
-#blog .container.text-center, #blog .container-fluid {
-  padding: 56px 0px 42px; }
-#blog h5, #blog h4 {
+    padding-bottom: 42px; }
+    #motivacion .linea-estilo,
+    #motivacion h3 {
+      padding: 0px 49px; }
+    #motivacion h4 {
+      padding: 20px 42px; } }
+#blogA .container-fluid {
+  padding: 91px 145px 42px; }
+#blogA h5 {
   color: #9E9D9D; }
-#blog h2, #blog h3 {
+#blogA h1 {
+  color: #58C6E7;
+  letter-spacing: 1; }
+#blogA .foto-nombre .foto {
+  float: left;
+  padding-right: 21px;
+  padding-top: 14px; }
+#blogA .foto-nombre .nombre h3 {
   color: #58C6E7; }
-#blog img.foto {
-  float: left; }
-#blog .foto-nombre {
-  position: relative;
-  padding: 7px 0px; }
-  #blog .foto-nombre .nombre {
-    float: left;
-    padding-left: 7px; }
-#blog .contexto h4 {
-  line-height: 1.5; }
-#blog .contexto img {
-  width: 100%; }
-#blog .blog-lista {
-  padding: 0px 50px; }
-  #blog .blog-lista h4 {
-    color: #ffd13f; }
-  #blog .blog-lista .background img {
-    border-radius: 50px;
-    position: relative;
-    bottom: 42px;
-    width: 30%; }
-  #blog .blog-lista .background .comentario {
-    text-align: initial;
-    padding: 0px 18px;
-    position: relative;
-    bottom: 24px;
-    line-height: 1.6;
-    font-size: 16px; }
-  #blog .blog-lista .lista {
-    padding: 14px;
-    padding-bottom: 28px; }
-    #blog .blog-lista .lista h5 {
-      text-align: left; }
-    #blog .blog-lista .lista hr {
-      border: 1px solid #9E9D9D;
-      margin: 0px; }
-
-#blog .container {
-  padding: 56px 145px 42px; }
-#blog h1 {
+#blogA .foto-nombre .nombre h4 {
   color: #9E9D9D; }
-#blog .grid-blog {
-  padding-top: 70px; }
-  #blog .grid-blog .background img {
-    border-radius: 50px;
-    position: relative;
-    bottom: 42px; }
-  #blog .grid-blog .background .comentario {
-    text-align: left;
-    padding: 20px;
-    position: relative;
-    bottom: 24px;
-    line-height: 1.6; }
-#blog .compartir {
+#blogA .contexto {
+  color: #9E9D9D;
+  letter-spacing: 0.4; }
+  #blogA .contexto img {
+    padding: 14px 0px;
+    width: 100%; }
+#blogA .blog-lista .background {
+  padding: 10px 10px 36px; }
+  #blogA .blog-lista .background img {
+    border-radius: 50%; }
+#blogA .blog-lista h4 {
+  color: #ffd13f; }
+#blogA .blog-lista .lista h5 {
+  text-align: left;
+  padding-left: 23px;
+  padding-top: 7px; }
+#blogA .blog-lista .lista hr {
+  border-top: 1px solid #9E9D9D;
+  margin: 0px 0px 0px 14px; }
+#blogA .compartir {
   background: steelblue;
   color: white; }
+
+/*POP AP PARA COMPARTIR*/
+.modal-dialog .modal-content {
+  padding: 0px; }
+  .modal-dialog .modal-content .modal-header {
+    background: #337ab7;
+    color: white;
+    border-radius: 7px; }
+  .modal-dialog .modal-content textarea.form-control {
+    border: none; }
+  .modal-dialog .modal-content .btn-group {
+    padding: 5px; }
+  .modal-dialog .modal-content .modal-body {
+    position: relative;
+    padding: 0px 11px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee; }
+    .modal-dialog .modal-content .modal-body img {
+      width: 100%;
+      padding: 11px 0px; }
+    .modal-dialog .modal-content .modal-body h3 {
+      margin: 9px 0px; }
+    .modal-dialog .modal-content .modal-body p {
+      font-size: 13px;
+      color: #9E9D9D; }
+  .modal-dialog .modal-content .modal-footer {
+    background: #dadada; }
+
 @media screen and (max-width: 480px) {
-  #blog .container {
+  #blogA .container-fluid {
     padding: 0px; }
-    #blog .container .background {
-      background-color: white; }
-      #blog .container .background .comentario {
-        text-align: center; }
-    #blog .container .background:hover {
-      background-color: #ffd13f; } }
-
-.background {
-  background-color: #eeeeee; }
-
-.background:hover {
-  background-color: #ffd13f; }
-  .background:hover .comentario {
-    color: white; }
-
+  #blogA .blog-lista {
+    text-align: center;
+    padding: 42px; } }
 #blog2 .container {
   padding: 56px 145px 42px; }
 #blog2 h1 {
@@ -6702,12 +6748,6 @@ nav.navbar.navbar-default.fixed {
         text-align: center; }
     #blog2 .container .background:hover {
       background-color: #ffd13f; } }
-#blog2 .btn-contactos-celeste {
-  padding: 14px 49px;
-  font-size: 21px;
-  background-color: #58C6E7;
-  border-color: white;
-  border-radius: 30px; }
 #blog2 .flecha.text-center {
   bottom: -77px; }
 
@@ -6736,6 +6776,9 @@ nav.navbar.navbar-default.fixed {
 @media screen and (max-width: 480px) {
   .navbar.scroll {
     background-color: transparent !important; } }
+.navbar-default .navbar-toggle {
+  border-color: transparent; }
+
 footer {
   background-color: #9E9D9D; }
   footer ul {
